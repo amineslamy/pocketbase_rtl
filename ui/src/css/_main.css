@@ -36,3 +36,63 @@
 @import "./erd.css";
 @import "./hideControls.css";
 @import "./sqlConsole.css";
+
+/* ==========================================================================
+   Persian & RTL Custom Styles
+   ========================================================================== */
+
+/* ۱. تعریف متغیر فونت و فونت پایه کل عناصر */
+:root {
+    --base-font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif !important;
+}
+
+/* ۲. راست‌چین کردن محتوای متنی و جداول */
+input,
+textarea,
+.table-wrapper {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ۳. اصلاح چیدمان هدر و منوی بالا */
+.app-header {
+    direction: ltr;
+}
+
+.app-header .header-content {
+    direction: rtl;
+}
+
+/* ۴. قفل چیدمان لایه‌بندی فرم جستجو و فیلتر (حفظ جایگاه آیکون‌ها) */
+form.searchbar,
+form.searchbar .field,
+.search-bar,
+.filter-wrapper {
+    direction: ltr !important;
+}
+
+/* ۵. تنظیم جهت متن درونی فرم جستجو */
+form.searchbar .editor-content,
+.search-bar input {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+form.searchbar .editor-content[data-placeholder]:empty::before {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+/* ۶. اصلاح خط جداکننده سایدمون به چپ */
+.app-sidebar {
+    border-left: 1px solid var(--base-alt1-color);
+    border-right: none;
+}

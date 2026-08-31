@@ -60,7 +60,7 @@ window.app.store = store({
             // optional: isActive
             href: "#/collections",
             icon: "ri-database-2-line",
-            label: "Collections",
+            label: "جداول",
         },
         {
             href: "#/logs",

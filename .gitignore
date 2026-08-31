@@ -18,3 +18,18 @@ CHANGELOG.html
 CHANGELOG_16_22.html
 CHANGELOG_8_15.html
 LICENSE.html
+
+
+# نادیده‌گرفتن پوشه دیتابیس و فایل‌های آپلودی پاکت‌بیس
+pb_data/
+pb_hooks/
+
+# نادیده‌گرفتن وابستگی‌ها و خروجی‌های فرانت‌اند
+ui/node_modules/
+ui/dist/
+ui/.vite/
+
+# فایل‌های سیستم‌عامل و IDE
+.DS_Store
+*.exe
+*.log

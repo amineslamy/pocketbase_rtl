@@ -75,7 +75,7 @@ export function collectionsSidebar() {
                     t.input({
                         className: "p-r-5",
                         type: "text",
-                        placeholder: "Search collections...",
+                        placeholder: "جستجو در جداول...",
                         value: () => data.search,
                         oninput: (e) => data.search = e.target.value,
                     }),
@@ -197,7 +197,7 @@ export function collectionsSidebar() {
                             },
                         },
                         t.i({ className: "ri-add-line", ariaHidden: true }),
-                        t.span({ textContent: "New collection" }),
+                        t.span({ textContent: "جدول جدید" }),
                     ),
                 ),
             ];
