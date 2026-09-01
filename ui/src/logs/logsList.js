@@ -287,7 +287,7 @@ export function logsList(logsSettings) {
                         t.div(
                             { className: "inline-flex gap-5" },
                             t.i({ className: "ri-calendar-line", ariaHidden: true }),
-                            t.span({ textContent: "Created" }),
+                            t.span({ textContent: "ایجاد شد" }),
                         ),
                     ),
                     t.th({ className: "col-meta" }),

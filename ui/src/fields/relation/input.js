@@ -154,7 +154,7 @@ export function input(props) {
                             {
                                 type: "button",
                                 className: "btn sm secondary transparent circle",
-                                ariaLabel: app.attrs.tooltip("Remove"),
+                                ariaLabel: app.attrs.tooltip("حذف"),
                                 onclick: () => remove(record.id),
                             },
                             t.i({ className: "ri-close-line", ariaHidden: true }),

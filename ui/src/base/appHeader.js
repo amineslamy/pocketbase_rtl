@@ -82,7 +82,7 @@ export function appHeader() {
                         },
                     },
                     t.i({ className: "ri-group-line", ariaHidden: true }),
-                    t.span({ className: "txt" }, "Manage superusers"),
+                    t.span({ className: "txt" }, "مدیریت کاربران ارشد"),
                 ),
                 t.hr(),
                 t.button(
@@ -92,7 +92,7 @@ export function appHeader() {
                         onclick: () => app.pb.authStore.clear(),
                     },
                     t.i({ className: "ri-logout-circle-line", ariaHidden: true }),
-                    t.span({ className: "txt" }, "Logout"),
+                    t.span({ className: "txt" }, "خروج"),
                 ),
             ),
         );
@@ -101,9 +101,9 @@ export function appHeader() {
 
 function colorSchemeButton() {
     const options = [
-        { value: "light", icon: "ri-sun-line", label: "Light" },
-        { value: "dark", icon: "ri-moon-line", label: "Dark" },
-        { value: "", icon: "ri-subtract-line", label: "Auto" },
+        { value: "light", icon: "ri-sun-line", label: "روشن" },
+        { value: "dark", icon: "ri-moon-line", label: "تاریک" },
+        { value: "", icon: "ri-subtract-line", label: "خودکار" },
     ];
 
     return [

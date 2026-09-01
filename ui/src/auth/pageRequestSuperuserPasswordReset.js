@@ -79,7 +79,7 @@ export function pageRequestSuperuserPasswordReset(route) {
                             disabled: () => data.isSubmitting,
                         },
                         t.i({ className: "ri-mail-send-line", ariaHidden: true }),
-                        t.span({ className: "txt" }, "Send recovery link"),
+                        t.span({ className: "txt" }, "ارسال لینک بازیابی"),
                     ),
                 ),
             );

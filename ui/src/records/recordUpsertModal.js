@@ -466,7 +466,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                                     {
                                         type: "button",
                                         className: "btn sm secondary transparent circle m-l-auto",
-                                        ariaLabel: app.attrs.tooltip("Discard draft", "left"),
+                                        ariaLabel: app.attrs.tooltip("حذف پیش نویس", "left"),
                                         onclick: () => {
                                             deleteDraft();
                                         },
@@ -673,7 +673,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
 
                 return new Promise((r) => {
                     app.modals.confirm(
-                        "You have unsaved changes. Do you really want to discard them?",
+                        "شما تغییرات ذخیره نشده‌ای دارید. آیا واقعاً می‌خواهید آنها را حذف کنید؟",
                         () => {
                             deleteDraft();
                             return r(modalSettings.onbeforeclose?.(el));
@@ -788,7 +788,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
 
                                                     if (data.hasChanges) {
                                                         app.modals.confirm(
-                                                            "You have unsaved changes. Do you really want to discard them?",
+                                                            "شما تغییرات ذخیره نشده‌ای دارید. آیا واقعاً می‌خواهید آنها را حذف کنید؟",
                                                             duplicate,
                                                             null,
                                                             { yesButton: "Yes, discard" },
@@ -1444,7 +1444,7 @@ function authProvidersTab(collection, data) {
                                     {
                                         type: "button",
                                         className: "btn sm secondary transparent circle",
-                                        ariaLabel: app.attrs.tooltip("Unlink", "left"),
+                                        ariaLabel: app.attrs.tooltip("لغو پیوند", "left"),
                                         onclick: () => confirmAndUnlink(externalAuth),
                                     },
                                     t.i({ className: "ri-close-line", ariaHidden: true }),

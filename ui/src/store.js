@@ -46,7 +46,7 @@ window.app.store = store({
             // optional: isActive
             href: import.meta.env.PB_DOCS_URL,
             icon: "ri-book-open-line",
-            label: "Docs",
+            label: "اسناد",
         },
         {
             href: import.meta.env.PB_RELEASES,
@@ -65,12 +65,12 @@ window.app.store = store({
         {
             href: "#/logs",
             icon: "ri-bar-chart-box-line",
-            label: "Logs",
+            label: "لاگ ها",
         },
         {
             href: "#/settings",
             icon: "ri-settings-3-line",
-            label: "Settings",
+            label: "تنظیمات",
         },
     ],
 
@@ -80,46 +80,46 @@ window.app.store = store({
                 // optional: isActive
                 href: "#/settings",
                 icon: "ri-home-gear-line",
-                label: "Application",
+                label: "سامانه",
             },
             {
                 href: "#/settings/mail",
                 icon: "ri-send-plane-2-line",
-                label: "Mail settings",
+                label: "تنظیمات ایمیل",
             },
             {
                 href: "#/settings/storage",
                 icon: "ri-archive-drawer-line",
-                label: "Files storage",
+                label: "ذخیره سازی",
             },
             {
                 href: "#/settings/backups",
                 icon: "ri-archive-line",
-                label: "Backups",
+                label: "نسخه پشتیبان",
             },
             {
                 href: "#/settings/crons",
                 icon: "ri-time-line",
-                label: "Crons",
+                label: "کرون ها",
             },
         ],
         Sync: [
             {
                 href: "#/settings/export-collections",
                 icon: "ri-uninstall-line",
-                label: "Export collections",
+                label: "خروجی گرفتن از جداول",
             },
             {
                 href: "#/settings/import-collections",
                 icon: "ri-install-line",
-                label: "Import collections",
+                label: "وارد کردن جداول",
             },
         ],
         Debug: [
             {
                 href: "#/settings/sql",
                 icon: "ri-terminal-box-line",
-                label: "SQL console",
+                label: "SQL کنسول",
             },
         ],
     },

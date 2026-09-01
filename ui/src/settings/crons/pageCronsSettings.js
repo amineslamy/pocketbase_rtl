@@ -29,7 +29,7 @@ export function pageCronsSettings(route) {
                 { className: "wrapper m-b-base" },
                 t.div(
                     { className: "flex gap-10 m-b-sm" },
-                    t.div({ className: "txt-lg" }, "Registered app cron jobs"),
+                    t.div({ className: "txt-lg" }, "کرون جاب های برنامه ریزی شده"),
                     app.components.refreshButton({
                         className: "btn sm transparent secondary circle",
                         onclick: resetCronsList,
@@ -40,14 +40,14 @@ export function pageCronsSettings(route) {
                 }),
                 t.div(
                     { className: "txt-sm txt-hint m-t-sm" },
-                    "App cron jobs can be registered only programmatically with ",
+                    "کرون جاب‌های برنامه فقط می‌توانند به صورت برنامه‌نویسی شده ثبت شوند با: ",
                     t.a({
                         href: `${import.meta.env.PB_DOCS_URL}/go-jobs-scheduling/`,
                         target: "_blank",
                         rel: "noopener noreferrer",
                         textContent: "Go",
                     }),
-                    " or ",
+                    " یا ",
                     t.a({
                         href: `${import.meta.env.PB_DOCS_URL}/js-jobs-scheduling/`,
                         target: "_blank",

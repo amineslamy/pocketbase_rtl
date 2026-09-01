@@ -20,7 +20,7 @@ window.app.components.refreshButton = function(propsArg = {}) {
         id: undefined,
         hidden: undefined,
         inert: undefined,
-        tooltip: "Refresh",
+        tooltip: "رفرش",
         className: "btn transparent secondary circle rotate-btn",
         disabled: false,
         onclick: function(e) {},

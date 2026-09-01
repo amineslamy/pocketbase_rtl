@@ -5,9 +5,9 @@ export function tokenOptionsAccordion(collection) {
         get tokensList() {
             if (collection?.name === "_superusers") {
                 return [
-                    { key: "authToken", label: "Auth" },
-                    { key: "passwordResetToken", label: "Password reset" },
-                    { key: "fileToken", label: "Protected file" },
+                    { key: "authToken", label: "نویسنده" },
+                    { key: "passwordResetToken", label: "ریست پسورد" },
+                    { key: "fileToken", label: "فایل محافظت شده" },
                 ];
             }
 

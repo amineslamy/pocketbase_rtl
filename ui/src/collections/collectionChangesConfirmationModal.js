@@ -278,7 +278,7 @@ window.app.modals.openCollectionChangesConfirmation = async function(
                                 { className: "list-item" },
                                 t.div(
                                     { className: "content" },
-                                    t.span({ className: "txt" }, "Changed API rule for "),
+                                    t.span({ className: "txt" }, "قانونِ API تغییر یافته، برای "),
                                     t.code(null, ruleChange.prop),
                                 ),
                                 t.small({ className: "txt-bold" }, "Old:"),

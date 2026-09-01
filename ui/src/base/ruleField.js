@@ -35,7 +35,7 @@ window.app.components.ruleField = function(propsArg = {}) {
         help: undefined,
         value: null,
         nullable: true,
-        placeholder: "Leave empty to grant everyone access...",
+        placeholder: "برای دسترسی دادن به همه، خالی بگذارید...",
         autocomplete: (word) => [],
         oninput: (newVal) => {},
         onmount: (el) => {},
@@ -105,7 +105,7 @@ window.app.components.ruleField = function(propsArg = {}) {
             { htmlFor: uniqueId },
             (el) => {
                 if (!props.label) {
-                    return t.span({ className: "txt" }, "Rule");
+                    return t.span({ className: "txt" }, "قانون");
                 }
 
                 if (typeof props.label == "function") {
@@ -129,7 +129,7 @@ window.app.components.ruleField = function(propsArg = {}) {
                         disabled: () => props.disabled,
                         onclick: unlock,
                     },
-                    t.span({ className: "txt" }, "Unlock and set custom rule"),
+                    t.span({ className: "txt" }, "باز کردن قفل و تنظیم قانون سفارشی"),
                     t.i({ className: "ri-lock-unlock-line", ariaHidden: true }),
                 );
             }
@@ -155,7 +155,7 @@ window.app.components.ruleField = function(propsArg = {}) {
                         onclick: lock,
                     },
                     t.i({ className: "ri-lock-line", ariaHidden: true }),
-                    t.span({ className: "txt" }, "Set superusers only"),
+                    t.span({ className: "txt" }, "فقط کاربر ارشد"),
                 ),
             ];
         },

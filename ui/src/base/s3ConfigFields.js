@@ -23,7 +23,7 @@ window.app.components.s3ConfigFields = function(propsArg = {}) {
         className: "",
         config: {}, // S3 config store (pass as a function in case the object is being replaced)
         configKey: "s3", // used for the fields error matching
-        toggleLabel: "Use S3 storage",
+        toggleLabel: "استفاده از ابر S3",
         testFilesystem: "storage",
         before: null,
         after: null,
@@ -184,7 +184,7 @@ window.app.components.s3ConfigFields = function(propsArg = {}) {
                         }),
                         t.label(
                             { htmlFor: () => `${props.configKey}.forcePathStyle` },
-                            t.span({ className: "txt" }, "Force path-style addressing"),
+                            t.span({ className: "txt" }, "آدرس‌دهی اجباری به سبک مسیر"),
                             t.i({
                                 className: "ri-information-line link-hint",
                                 ariaDescription: app.attrs.tooltip(

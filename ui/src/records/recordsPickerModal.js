@@ -297,7 +297,7 @@ function recordsPickerModal(settings = defaultSettings) {
                 {
                     type: "button",
                     className: "btn circle transparent",
-                    ariaLabel: app.attrs.tooltip("Add new record"),
+                    ariaLabel: app.attrs.tooltip("افزودن رکورد جدید"),
                     onclick: () => {
                         app.modals.openRecordUpsert(data.collection);
                     },
@@ -375,7 +375,7 @@ function recordsPickerModal(settings = defaultSettings) {
                         t.button({
                             type: "button",
                             className: "btn sm secondary",
-                            textContent: "Clear search",
+                            textContent: "بازنشانی جستجو",
                             hidden: () => !data.searchTerm.trim().length,
                             onclick: () => {
                                 data.searchTerm = "";

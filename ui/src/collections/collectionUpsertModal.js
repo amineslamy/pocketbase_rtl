@@ -312,7 +312,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
 
                 return new Promise((r) => {
                     app.modals.confirm(
-                        "You have unsaved changes. Do you really want to discard them?",
+                        "شما تغییرات ذخیره نشده‌ای دارید. آیا واقعاً می‌خواهید آنها را حذف کنید؟",
                         () => r(modalSettings.onbeforeclose?.(el)),
                         () => r(false),
                     );
@@ -450,7 +450,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                                         },
                                     },
                                     t.i({ className: "ri-braces-line", ariaHidden: true }),
-                                    t.span({ className: "txt" }, "Copy JSON"),
+                                    t.span({ className: "txt" }, "کپی JSON"),
                                 ),
                                 t.button(
                                     {
@@ -461,7 +461,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
 
                                             if (data.hasChanges) {
                                                 app.modals.confirm(
-                                                    "You have unsaved changes. Do you really want to discard them?",
+                                                    "شما تغییرات ذخیره نشده‌ای دارید. آیا واقعاً می‌خواهید آنها را حذف کنید؟",
                                                     duplicate,
                                                     null,
                                                     { yesButton: "Yes, discard" },
@@ -472,7 +472,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                                         },
                                     },
                                     t.i({ className: "ri-file-copy-line", ariaHidden: true }),
-                                    t.span({ className: "txt" }, "Duplicate"),
+                                    t.span({ className: "txt" }, "تکثیر کردن"),
                                 ),
                                 t.hr(),
                                 () => {
@@ -656,7 +656,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                     disabled: () => data.isSaving,
                     onclick: () => app.modals.close(modal),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             () => {
                 const rawErrors = JSON.stringify(app.store.errors, null, 2);
@@ -701,7 +701,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                                 confirmSave(false);
                             },
                         },
-                        t.span({ className: "txt" }, "Save and continue"),
+                        t.span({ className: "txt" }, "ذخیره و ادامه"),
                         t.small({ className: "txt-hint" }, "(Ctrl+S)"),
                     ),
                     t.hr(),
@@ -714,7 +714,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                                 resetForm();
                             },
                         },
-                        t.span({ className: "txt" }, "Reset form"),
+                        t.span({ className: "txt" }, "بازنشانی فرم"),
                     ),
                 ),
             ),
@@ -885,7 +885,7 @@ function truncateDropdownItem(data, modalSettings) {
             },
         },
         t.i({ className: "ri-eraser-line", ariaHidden: true }),
-        t.span({ className: "txt" }, "Truncate"),
+        t.span({ className: "txt" }, "کوتاه کردن"),
     );
 }
 
@@ -991,6 +991,6 @@ function deleteDropdownItem(data, modalSettings) {
             },
         },
         t.i({ className: "ri-delete-bin-7-line", ariaHidden: true }),
-        t.span({ className: "txt" }, "Delete"),
+        t.span({ className: "txt" }, "حذف"),
     );
 }

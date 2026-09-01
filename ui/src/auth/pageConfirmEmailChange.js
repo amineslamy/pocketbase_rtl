@@ -121,7 +121,7 @@ export function pageConfirmEmailChange(route) {
                             className: () => `btn lg block ${data.isSubmitting ? "loading" : ""}`,
                             disabled: () => data.isSubmitting,
                         },
-                        t.span({ className: "txt" }, "Confirm new email"),
+                        t.span({ className: "txt" }, "تایید ایمیل جدید"),
                     ),
                 ),
             );

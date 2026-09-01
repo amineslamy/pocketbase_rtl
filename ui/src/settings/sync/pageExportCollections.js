@@ -105,7 +105,7 @@ export function pageExportCollections(route) {
                         { className: "col-lg-12" },
                         t.div(
                             { className: "txt-lg" },
-                            "Below you'll find your current collections configuration that you could import in another PocketBase environment.",
+                            "در زیر پیکربندی مجموعه‌های فعلی خود را که می‌توانید در یک محیط PocketBase دیگر وارد کنید، مشاهده خواهید کرد.",
                         ),
                     ),
                     t.div(

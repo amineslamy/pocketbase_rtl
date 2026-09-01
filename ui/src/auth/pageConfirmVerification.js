@@ -104,7 +104,7 @@ export function pageConfirmVerification(route) {
                         disabled: () => data.isResending,
                         onclick: () => resend(),
                     },
-                    t.span({ className: "txt" }, "Resend"),
+                    t.span({ className: "txt" }, "بازارسال"),
                 ),
             ];
         },

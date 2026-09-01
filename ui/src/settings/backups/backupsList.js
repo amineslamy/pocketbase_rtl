@@ -159,7 +159,7 @@ export function backupsList(propsArg = {}) {
                             t.button(
                                 {
                                     type: "button",
-                                    ariaLabel: app.attrs.tooltip("Download"),
+                                    ariaLabel: app.attrs.tooltip("دانلود"),
                                     className: () =>
                                         `btn sm circle secondary transparent ${
                                             data.isDownloading[backup.key] ? "loading" : ""
@@ -172,7 +172,7 @@ export function backupsList(propsArg = {}) {
                             t.button(
                                 {
                                     type: "button",
-                                    ariaLabel: app.attrs.tooltip("Restore"),
+                                    ariaLabel: app.attrs.tooltip("بازیابی"),
                                     className: () => `btn sm circle secondary transparent`,
                                     disabled: () => data.isDeleting[backup.key] || data.isDownloading[backup.key],
                                     onclick: () => openBackupRestoreModal(backup.key),
@@ -182,7 +182,7 @@ export function backupsList(propsArg = {}) {
                             t.button(
                                 {
                                     type: "button",
-                                    ariaLabel: app.attrs.tooltip("Delete"),
+                                    ariaLabel: app.attrs.tooltip("حذف"),
                                     className: () =>
                                         `btn sm circle secondary transparent ${
                                             data.isDeleting[backup.key] ? "loading" : ""
@@ -214,7 +214,7 @@ export function backupsList(propsArg = {}) {
                     if (data.canBackup) {
                         return [
                             t.i({ className: "ri-play-circle-line", ariaHidden: true }),
-                            t.span({ className: "txt" }, "Initialize new backup"),
+                            t.span({ className: "txt" }, "مقداردهی نسخه پشتیبان جدید"),
                         ];
                     }
 

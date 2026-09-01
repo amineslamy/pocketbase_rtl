@@ -234,7 +234,7 @@ function initSearch(selectFunc = null) {
             { className: "field" },
             t.input({
                 type: "text",
-                placeholder: "Search address...",
+                placeholder: "آدرس جستجو ...",
                 value: () => data.searchTerm,
                 oninput: (e) => (data.searchTerm = e.target.value),
             }),

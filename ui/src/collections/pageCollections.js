@@ -220,7 +220,7 @@ export function pageCollections(route) {
                         {
                             type: "button",
                             className: "btn circle transparent secondary tooltip-bottom btn-collection-settings",
-                            ariaLabel: app.attrs.tooltip("Collection settings"),
+                            ariaLabel: app.attrs.tooltip("تنظیمات جدول"),
                             onclick: () => {
                                 app.modals.openCollectionUpsert(app.store.activeCollection, {
                                     ontruncate: () => refreshRecordsList(),
@@ -257,7 +257,7 @@ export function pageCollections(route) {
                             onclick: () => app.modals.openApiPreview(app.store.activeCollection),
                         },
                         t.i({ className: "ri-code-s-slash-line", ariaHidden: true }),
-                        t.span({ className: "txt", textContent: "API preview" }),
+                        t.span({ className: "txt", textContent: "API پیش نمایش" }),
                     ),
                     () => {
                         if (app.store.activeCollection?.type == "view") {

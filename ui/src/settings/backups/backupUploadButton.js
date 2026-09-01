@@ -74,7 +74,7 @@ export function backupUploadButton(onSuccess = null) {
         t.button(
             {
                 type: "button",
-                ariaLabel: app.attrs.tooltip("Upload backup"),
+                ariaLabel: app.attrs.tooltip("آپلود نسخه پشتیبان"),
                 className: () => `btn sm transparent secondary circle ${data.isUploading ? "loading" : ""}`,
                 disabled: () => data.isUploading,
                 onclick: () => fileInput?.click(),

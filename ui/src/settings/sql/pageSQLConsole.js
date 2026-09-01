@@ -470,7 +470,7 @@ export function pageSQLConsole(route) {
                             t.span({
                                 role: "button",
                                 className: "link-hint",
-                                textContent: "Export as CSV",
+                                textContent: "خروجی گرفتن به صورت CSV",
                                 onclick: downloadCSV,
                             }),
                             ")",

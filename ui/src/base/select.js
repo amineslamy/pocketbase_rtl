@@ -264,7 +264,7 @@ window.app.components.select = function(propsArg = {}) {
                         tabIndex: -1,
                         role: "button",
                         className: "ri-close-line link-hint btn-option-unset",
-                        ariaLabel: app.attrs.tooltip("Unset"),
+                        ariaLabel: app.attrs.tooltip("تنظیم نشده"),
                         onclick: () => {
                             toggle(opt);
                             return false;

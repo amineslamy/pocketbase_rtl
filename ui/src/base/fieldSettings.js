@@ -178,7 +178,7 @@ window.app.components.fieldSettings = function(data, settingsArg = {}) {
                             name: () => `fields.${data.fieldIndex}.name`,
                             required: true,
                             spellcheck: false,
-                            placeholder: "Field name*",
+                            placeholder: "نام فیلد*",
                             className: "inline-error",
                             disabled: () => data.field[toDeleteProp] || data.field.system,
                             value: () => data.field.name || "",
@@ -251,7 +251,7 @@ window.app.components.fieldSettings = function(data, settingsArg = {}) {
                     className: "btn sm circle transparent warning",
                     hidden: () => !data.field[toDeleteProp],
                     onclick: () => delete data.field[toDeleteProp],
-                    ariaLabel: app.attrs.tooltip("Restore"),
+                    ariaLabel: app.attrs.tooltip("بازیابی"),
                 },
                 t.i({ className: "ri-restart-line", ariaHidden: true }),
             ),
@@ -288,7 +288,7 @@ window.app.components.fieldSettings = function(data, settingsArg = {}) {
                     }),
                     t.label(
                         { htmlFor: uniqueId + ".presentable" },
-                        t.span({ className: "txt" }, "Presentable"),
+                        t.span({ className: "txt" }, "قابل نمایش"),
                         t.i({
                             className: "ri-information-line link-hint",
                             ariaDescription: app.attrs.tooltip(
@@ -322,7 +322,7 @@ window.app.components.fieldSettings = function(data, settingsArg = {}) {
                     }),
                     t.label(
                         { htmlFor: uniqueId + ".hidden" },
-                        t.span({ className: "txt" }, "Hidden"),
+                        t.span({ className: "txt" }, "پنهان"),
                         t.i({
                             className: "ri-information-line link-hint",
                             ariaDescription: app.attrs.tooltip("Hide from the JSON API response and filters."),

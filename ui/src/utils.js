@@ -1138,19 +1138,19 @@ const utils = {
 
     logLevels: {
         [-4]: {
-            label: "DEBUG",
+            label: "عیب یابی",
             class: "",
         },
         0: {
-            label: "INFO",
+            label: "اطلاعات",
             class: "success",
         },
         4: {
-            label: "WARN",
+            label: "هشدار",
             class: "warning",
         },
         8: {
-            label: "ERROR",
+            label: "خطا",
             class: "danger",
         },
     },

@@ -23,7 +23,7 @@ window.app.components.searchbar = function(propsArg = {}) {
         inert: undefined,
         value: "",
         className: "",
-        placeholder: "Search...",
+        placeholder: "جستجو",
         disabled: false,
         historyKey: "",
         autocomplete: undefined, // Array<string|Object> | function(word): Array<string|Object>,

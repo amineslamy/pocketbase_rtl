@@ -97,7 +97,7 @@ export function cronsList(propsArg = {}) {
                         t.button(
                             {
                                 type: "button",
-                                ariaLabel: app.attrs.tooltip("Run"),
+                                ariaLabel: app.attrs.tooltip("اجرا"),
                                 className: () =>
                                     `btn sm circle secondary transparent ${data.isRunning[cron.id] ? "loading" : ""}`,
                                 disabled: () => data.isRunning[cron.id],

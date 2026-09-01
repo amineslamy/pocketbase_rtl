@@ -312,35 +312,35 @@ export function pageImportCollections(route) {
                         { className: "col-lg-12" },
                         t.span(
                             { className: "txt-lg m-r-5" },
-                            "Paste below the collections configuration you want to import or",
+                            "در زیر پیکربندی مجموعه‌هایی که می‌خواهید وارد کنید، پیست کنید یا",
                         ),
                         t.label(
                             {
                                 htmlFor: fileInput.id,
                                 className: () => `btn sm outline ${data.isLoadingFile ? "loading" : ""}`,
                             },
-                            t.span({ className: "txt" }, "Load from JSON file"),
+                            t.span({ className: "txt" }, "بارگذاری از فایل JSON"),
                         ),
                         fileInput,
                         t.p(
                             { className: "txt-hint" },
                             t.em(
                                 null,
-                                "You can use the ",
+                                "شما می توانید از ",
                                 t.a({
                                     href: `${import.meta.env.PB_DOCS_URL}/go-migrations/`,
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     textContent: "Go",
                                 }),
-                                " or ",
+                                " یا ",
                                 t.a({
                                     href: `${import.meta.env.PB_DOCS_URL}/js-migrations/`,
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     textContent: "JS",
                                 }),
-                                " migrations to manage your collections programmatically in more granular and version controlled manner.",
+                                " برای مهاجرت یا مدیریت جداولتان به صورت برنامه ریزی شده و با شیوه ای دقیق تر و با کنترل نسخه استفاده کنید",
                             ),
                         ),
                     ),
@@ -410,7 +410,7 @@ export function pageImportCollections(route) {
                                         { className: "list-item" },
                                         t.span({
                                             className: "label import-change-label danger",
-                                            textContent: "Deleted",
+                                            textContent: "حذف شده",
                                         }),
                                         t.div(
                                             { className: "inline-flex gap-5" },
@@ -430,7 +430,7 @@ export function pageImportCollections(route) {
                                         { className: "list-item" },
                                         t.span({
                                             className: "label import-change-label warning",
-                                            textContent: "Changed",
+                                            textContent: "تغییر یافته",
                                         }),
                                         t.div(
                                             { className: "inline-flex gap-5" },
@@ -466,7 +466,7 @@ export function pageImportCollections(route) {
                                         { className: "list-item" },
                                         t.span({
                                             className: "label import-change-label success",
-                                            textContent: "Added",
+                                            textContent: "اضافه شده",
                                         }),
                                         t.div(
                                             { className: "inline-flex gap-5" },
@@ -499,7 +499,7 @@ export function pageImportCollections(route) {
                                     t.button({
                                         type: "button",
                                         className: "btn warning sm m-l-10",
-                                        textContent: "Replace with original IDs",
+                                        textContent: "با شناسه‌های اصلی جایگزین کنید",
                                         onclick: replaceIds,
                                     }),
                                 ),

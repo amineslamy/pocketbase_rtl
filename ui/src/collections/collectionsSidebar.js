@@ -123,7 +123,7 @@ export function collectionsSidebar() {
                 t.button({
                     type: "button",
                     className: "btn sm secondary",
-                    textContent: "Clear search",
+                    textContent: "بازنشانی جستجو",
                     onclick: () => clearSearch(),
                 }),
             );

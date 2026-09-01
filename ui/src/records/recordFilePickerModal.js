@@ -281,7 +281,7 @@ function recordFilePickerModal(settings = defaultSettings) {
                 {
                     type: "button",
                     className: "btn circle transparent",
-                    ariaLabel: app.attrs.tooltip("Add new record"),
+                    ariaLabel: app.attrs.tooltip("افزودن رکورد جدید"),
                     onclick: () => app.modals.openRecordUpsert(data.activeCollection),
                 },
                 t.i({ className: "ri-add-line txt-hint", ariaHidden: true }),
@@ -365,7 +365,7 @@ function recordFilePickerModal(settings = defaultSettings) {
                 t.button({
                     type: "button",
                     className: "btn sm secondary",
-                    textContent: "Clear search",
+                    textContent: "بازنشانی جستجو",
                     hidden: () => !data.searchTerm?.length,
                     onclick: () => {
                         data.searchTerm = "";

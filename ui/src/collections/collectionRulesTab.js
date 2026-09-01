@@ -99,7 +99,7 @@ export function collectionRulesTab(upsertData) {
             t.div(
                 { className: "col-12", ariaDescription: systemRuleTooltip() },
                 app.components.ruleField({
-                    label: "List/Search rule",
+                    label: "قانونِ فهرست|جستجو",
                     name: "listRule",
                     autocomplete: autocomplete,
                     disabled: () => upsertData.originalCollection?.system,
@@ -110,7 +110,7 @@ export function collectionRulesTab(upsertData) {
             t.div(
                 { className: "col-12", ariaDescription: systemRuleTooltip() },
                 app.components.ruleField({
-                    label: "View rule",
+                    label: "قانونِ نمایش",
                     name: "viewRule",
                     autocomplete: autocomplete,
                     disabled: () => upsertData.originalCollection?.system,
@@ -129,7 +129,7 @@ export function collectionRulesTab(upsertData) {
                         { className: "col-12", ariaDescription: systemRuleTooltip() },
                         app.components.ruleField({
                             label: [
-                                t.span({ className: "txt", textContent: "Create rule" }),
+                                t.span({ className: "txt", textContent: "قانونِ ایجاد" }),
                                 t.i({
                                     hidden: () => upsertData.collection.createRule == null,
                                     className: "ri-information-line link-hint",
@@ -149,7 +149,7 @@ export function collectionRulesTab(upsertData) {
                         { className: "col-12", ariaDescription: systemRuleTooltip() },
                         app.components.ruleField({
                             label: [
-                                t.span({ className: "txt", textContent: "Update rule" }),
+                                t.span({ className: "txt", textContent: "قانونِ به روزرسانی" }),
                                 t.i({
                                     hidden: () => upsertData.collection.updateRule == null,
                                     className: "ri-information-line link-hint",
@@ -168,7 +168,7 @@ export function collectionRulesTab(upsertData) {
                     t.div(
                         { className: "col-12", ariaDescription: systemRuleTooltip() },
                         app.components.ruleField({
-                            label: "Delete rule",
+                            label: "قانونِ حذف",
                             name: "deleteRule",
                             autocomplete: autocomplete,
                             disabled: () => upsertData.originalCollection?.system,
@@ -199,7 +199,7 @@ export function collectionRulesTab(upsertData) {
                             local.showAuthRules = !local.showAuthRules;
                         },
                     },
-                    t.span({ className: "txt" }, "Additional auth collection rules"),
+                    t.span({ className: "txt" }, "سایر قوانین برای جمع‌آوری مجوز"),
                     t.i({
                         ariaHidden: true,
                         className: () => (local.showAuthRules ? "ri-arrow-drop-up-line" : "ri-arrow-drop-down-line"),
@@ -212,7 +212,7 @@ export function collectionRulesTab(upsertData) {
                         t.div(
                             { className: "col-12", ariaDescription: systemRuleTooltip() },
                             app.components.ruleField({
-                                label: "Authentication rule",
+                                label: "قانونِ احراز هویت",
                                 name: "authRule",
                                 placeholder: "",
                                 autocomplete: autocomplete,
@@ -224,27 +224,27 @@ export function collectionRulesTab(upsertData) {
                                 { className: "field-help" },
                                 t.p(
                                     null,
-                                    "This rule is executed every time ",
-                                    t.strong(null, "before authentication"),
-                                    " allowing you to restrict who can authenticate.",
+                                    "این قانون هر بار اجرا می‌شود ",
+                                    t.strong(null, "قبل از احراز هویت"),
+                                    "به شما امکان می‌دهد افرادی را که می‌توانند احراز هویت کنند محدود کنید.",
                                 ),
                                 t.p(
                                     null,
-                                    "For example, to allow only verified users you can set it to ",
+                                    "برای مثال، برای اینکه فقط به کاربران تأیید شده اجازه دسترسی بدهید، می‌توانید آن را روی",
                                     t.code(null, "verified = true"),
-                                    ".",
+                                    "تنظیم کنید.",
                                 ),
-                                t.p(null, "Leave it empty to allow anyone with an account to authenticate."),
+                                t.p(null, "برای اینکه هر کسی که حساب کاربری دارد بتواند احراز هویت کند، آن را خالی بگذارید."),
                                 t.p(
                                     null,
-                                    `To disable authentication entirely you can change it to "Set superusers only".`,
+                                    `برای غیرفعال کردن کامل احراز هویت، می‌توانید آن را به «فقط کاربر ارشد» تغییر دهید.".`,
                                 ),
                             ),
                         ),
                         t.div(
                             { className: "col-12", ariaDescription: systemRuleTooltip() },
                             app.components.ruleField({
-                                label: "Manage rule",
+                                label: "قانونِ مدیریت",
                                 name: "manageRule",
                                 autocomplete: autocomplete,
                                 disabled: () => upsertData.originalCollection?.system,

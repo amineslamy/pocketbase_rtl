@@ -150,16 +150,16 @@ function erd(data) {
 
 function rules(data) {
     const ruleOptions = [
-        { value: "listRule", label: "List/Search rule" },
-        { value: "viewRule", label: "View rule" },
-        { value: "createRule", label: "Create rule", filter: (c) => c.type != "view" },
-        { value: "updateRule", label: "Update rule", filter: (c) => c.type != "view" },
-        { value: "deleteRule", label: "Delete rule", filter: (c) => c.type != "view" },
-        { value: "authRule", label: "Auth rule", filter: (c) => c.type == "auth" },
-        { value: "manageRule", label: "Manage rule", filter: (c) => c.type == "auth" },
+        { value: "listRule", label: "قانونِ فهرست|جستجو" },
+        { value: "viewRule", label: "قانونِ نمایش" },
+        { value: "createRule", label: "قانونِ ایجاد", filter: (c) => c.type != "view" },
+        { value: "updateRule", label: "قانونِ به روزرسانی", filter: (c) => c.type != "view" },
+        { value: "deleteRule", label: "قانونِ حذف", filter: (c) => c.type != "view" },
+        { value: "authRule", label: "قانونِ احراز هویت", filter: (c) => c.type == "auth" },
+        { value: "manageRule", label: "قانونِ مدیریت", filter: (c) => c.type == "auth" },
         {
             value: "mfaRule",
-            label: "MFA rule",
+            label: "MFA نقشِ",
             emptyLabel: t.span({ className: "label info" }, "Enabled for everyone"),
             rule: (c) => c.mfa?.rule,
             filter: (c) => c.mfa?.enabled && c.type == "auth",

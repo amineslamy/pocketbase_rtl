@@ -74,7 +74,7 @@ function backupCreateModal(settings) {
         },
         t.header(
             { className: "modal-header" },
-            t.h5({ className: "m-auto txt-center" }, "Initialize new backup"),
+            t.h5({ className: "m-auto txt-center" }, "مقداردهی نسخه پشتیبان جدید"),
         ),
         t.form(
             {
@@ -96,11 +96,11 @@ function backupCreateModal(settings) {
                             { className: "content" },
                             t.p(
                                 null,
-                                `Please note that during the backup the performance could be slightly degraded and some queries may take longer to complete than usual.`,
+                                `لطفاً توجه داشته باشید که در طول پشتیبان‌گیری، عملکرد ممکن است کمی کاهش یابد و برخی از درخواست‌ها ممکن است بیشتر از حد معمول طول بکشند.`,
                             ),
                             t.p(
                                 { className: "txt-bold" },
-                                `If you are using S3 storage for the collections file upload, you'll have to backup them separately since they are not locally stored and they will not be included in the generated backup!`,
+                                `اگر از فضای ذخیره‌سازی ابری برای آپلود فایل‌های مجموعه استفاده می‌کنید، باید جداگانه از آنها پشتیبان تهیه کنید زیرا به صورت محلی ذخیره نمی‌شوند و در پشتیبان تولید شده لحاظ نخواهند شد!`,
                             ),
                         ),
                     ),
@@ -109,18 +109,18 @@ function backupCreateModal(settings) {
                     { className: "col-lg-12" },
                     t.div(
                         { className: "field" },
-                        t.label({ htmlFor: uniqueId + "_name" }, "Backup name"),
+                        t.label({ htmlFor: uniqueId + "_name" }, "نام پشتیبان"),
                         t.input({
                             id: uniqueId + "_name",
                             name: "name",
                             type: "text",
                             pattern: "^[a-z0-9_-]+\.zip$",
-                            placeholder: "Leave empty to autogenerate",
+                            placeholder: "برای تولید خودکار، خالی بگذارید",
                             value: () => data.name,
                             oninput: (e) => (data.name = e.target.value),
                         }),
                     ),
-                    t.div({ className: "field-help" }, "Must be in the format [a-z0-9_-].zip"),
+                    t.div({ className: "field-help" }, "باید به فرمت [a-z0-9_-].zip باشد"),
                 ),
             ),
         ),

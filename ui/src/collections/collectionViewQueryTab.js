@@ -135,7 +135,7 @@ export function collectionViewQueryTab(upsertData) {
                     { className: "field" },
                     t.label(
                         { htmlFor: uniqueId + ".viewQuery" },
-                        t.span({ className: "txt" }, "Select query"),
+                        t.span({ className: "txt" }, "انتخاب کوئری"),
                         t.span(
                             {
                                 hidden: () => !local.testError,

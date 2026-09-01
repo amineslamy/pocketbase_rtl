@@ -133,7 +133,7 @@ function backupRestoreModal(key) {
                     { className: "col-lg-12" },
                     t.div(
                         { className: "confirm-key-label m-b-sm" },
-                        "Type the backup name ",
+                        "نام پشتیبان را تایپ کنید ",
                         t.div(
                             { className: "label" },
                             () => data.key,
@@ -143,7 +143,7 @@ function backupRestoreModal(key) {
                     ),
                     t.div(
                         { className: "field" },
-                        t.label({ htmlFor: uniqueId + "_key" }, "Backup name"),
+                        t.label({ htmlFor: uniqueId + "_key" }, "نام پشتیبان"),
                         t.input({
                             id: uniqueId + "_key",
                             name: "key",

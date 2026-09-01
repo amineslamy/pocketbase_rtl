@@ -193,7 +193,7 @@ export function input(props) {
                             {
                                 type: "button",
                                 className: "btn sm secondary transparent circle",
-                                ariaLabel: app.attrs.tooltip("Remove file"),
+                                ariaLabel: app.attrs.tooltip("حذف فایل"),
                                 hidden: () => isDeleted(nameOrFile),
                                 onclick: () => toDelete(nameOrFile),
                             },

@@ -282,7 +282,7 @@ function requestOTPForm(data) {
                     disabled: () => data.isOTPRequestSubmitting,
                 },
                 t.i({ className: "ri-mail-send-line", ariaHidden: true }),
-                t.span({ className: "txt" }, "Send OTP"),
+                t.span({ className: "txt" }, "ارسال OTP"),
             ),
         ),
     );
@@ -394,7 +394,7 @@ function authWithOTPForm(data) {
                     className: () => `btn lg block next ${data.isOTPAuthSubmitting ? "loading" : ""}`,
                     disabled: () => data.isOTPAuthSubmitting,
                 },
-                t.span({ className: "txt" }, "Login"),
+                t.span({ className: "txt" }, "ورود"),
                 t.i({ className: "ri-arrow-right-line", ariaHidden: true }),
             ),
             t.div(

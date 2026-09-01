@@ -240,14 +240,14 @@ function indexUpsertModal(collection, index = "", settings = {}) {
                     className: "btn transparent m-r-auto",
                     onclick: () => app.modals.close(modal),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             t.button(
                 {
                     hidden: () => data.isNew,
                     type: "button",
                     className: () => "btn sm circle transparent secondary",
-                    ariaLabel: app.attrs.tooltip("Delete index", "left"),
+                    ariaLabel: app.attrs.tooltip("حذف شاخص", "left"),
                     onclick: () => {
                         app.modals.confirm(
                             "Do you really want to remove the selected index from the collection?",

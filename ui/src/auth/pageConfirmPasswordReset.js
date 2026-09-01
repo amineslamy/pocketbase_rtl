@@ -160,7 +160,7 @@ export function pageConfirmPasswordReset(route) {
                             className: () => `btn lg block ${data.isSubmitting ? "loading" : ""}`,
                             disabled: () => data.isSubmitting,
                         },
-                        t.span({ className: "txt" }, "Set new password"),
+                        t.span({ className: "txt" }, "تنظیم رمز عبور جدید"),
                     ),
                 ),
             );

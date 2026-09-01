@@ -292,7 +292,7 @@ function logsSettingsModal(modalSettings) {
                     t.button(
                         {
                             type: "button",
-                            ariaLabel: app.attrs.tooltip("Delete all logs", "left"),
+                            ariaLabel: app.attrs.tooltip("حذف تمام لاگ ها", "left"),
                             className: () =>
                                 `btn circle sm secondary transparent link-faded ${data.isDeleting ? "loading" : ""}`,
                             disabled: () => data.isDeleting || data.isSaving,

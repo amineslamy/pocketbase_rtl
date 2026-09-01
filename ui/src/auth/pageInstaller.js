@@ -238,7 +238,7 @@ export function pageInstaller(route) {
                         className: () => `btn lg next block ${data.isSubmitting ? "loading" : ""}`,
                         disabled: () => data.isBusy,
                     },
-                    t.span({ className: "txt" }, "Create superuser and login"),
+                    t.span({ className: "txt" }, "ایجاد کاربر ارشد و ورود"),
                     t.i({ className: "ri-arrow-right-line", ariaHidden: true }),
                 ),
             ),
@@ -253,7 +253,7 @@ export function pageInstaller(route) {
                     }`,
             },
             t.i({ className: "ri-upload-cloud-line", ariaHidden: true }),
-            t.span({ className: "txt" }, "Or initialize from backup"),
+            t.span({ className: "txt" }, "یا از نسخه پشتیبان مقداردهی اولیه کنید"),
         ),
         t.input({
             id: fileInputId,

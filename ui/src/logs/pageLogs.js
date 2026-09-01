@@ -109,7 +109,7 @@ export function pageLogs(route) {
                         t.button(
                             {
                                 className: "btn circle transparent secondary tooltip-right",
-                                ariaLabel: app.attrs.tooltip("Logs settings"),
+                                ariaLabel: app.attrs.tooltip("تنظیمات لاگ ها"),
                                 onclick: () =>
                                     app.modals.openLogsSettings({
                                         onsave: () => refreshLogsList(),

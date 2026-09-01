@@ -20,7 +20,7 @@ window.app.components.s3Test = function(propsArg = {}) {
     const props = store({
         rid: undefined,
         config: null, // S3 config store
-        label: "Use S3 storage",
+        label: "استفاده از ابر S3",
         testFilesystem: "storage", // "storage" or "backups"
     });
 
@@ -112,13 +112,13 @@ window.app.components.s3Test = function(propsArg = {}) {
             if (data.hasError) {
                 return [
                     t.i({ className: "ri-error-warning-line txt-warning", ariaHidden: true }),
-                    t.span({ className: "txt" }, "Failed to establish S3 connection"),
+                    t.span({ className: "txt" }, "اتصال S3 برقرار نشد"),
                 ];
             }
 
             return [
                 t.i({ className: "ri-checkbox-circle-line txt-success", ariaHidden: true }),
-                t.span({ className: "txt" }, "S3 connected successfully"),
+                t.span({ className: "txt" }, "S3 با موفقیت متصل شد"),
             ];
         },
     );

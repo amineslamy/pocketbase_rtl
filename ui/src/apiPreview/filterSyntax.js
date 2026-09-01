@@ -14,13 +14,13 @@ export function filterSyntax() {
             () => {
                 if (data.show) {
                     return [
-                        t.span({ className: "txt" }, "Hide details"),
+                        t.span({ className: "txt" }, "پنهان کردن جزئیات"),
                         t.i({ className: "ri-arrow-up-s-line", ariaHidden: true }),
                     ];
                 }
 
                 return [
-                    t.span({ className: "txt" }, "Show details"),
+                    t.span({ className: "txt" }, "نمایش جزئیات"),
                     t.i({ className: "ri-arrow-down-s-line", ariaHidden: true }),
                 ];
             },
