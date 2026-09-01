@@ -100,7 +100,7 @@ export function collectionsSidebar() {
                                 `btn sm circle transparent secondary link-faded ${
                                     app.store.isLoadingCollections ? "loading" : ""
                                 }`,
-                            ariaDescription: app.attrs.tooltip("Collections overview", "left"),
+                            ariaDescription: app.attrs.tooltip("نمای کلی جداول", "left"),
                             onclick: () => app.modals.openCollectionsOverview(),
                         },
                         t.i({ className: "ri-organization-chart", ariaHidden: true }),

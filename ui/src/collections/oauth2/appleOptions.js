@@ -20,7 +20,7 @@ window.app.oauth2.apple = function(providerInfo, namePrefix, data) {
                 },
             },
             t.i({ className: "ri-key-line", ariaHidden: true }),
-            t.span({ className: "txt" }, "Generate secret"),
+            t.span({ className: "txt" }, "تولید رمز"),
         ),
     );
 };
@@ -218,7 +218,7 @@ function appleSecretGeneratorModal(modalSettings = {}) {
                     className: "btn transparent m-r-auto",
                     onclick: () => app.modals.close(modal),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             t.button(
                 {
@@ -227,7 +227,7 @@ function appleSecretGeneratorModal(modalSettings = {}) {
                     className: "btn expanded",
                 },
                 t.i({ className: "ri-key-line", ariaHidden: true }),
-                t.span({ className: "txt" }, "Generate secret"),
+                t.span({ className: "txt" }, "تولید رمز"),
             ),
         ),
     );

@@ -713,9 +713,9 @@ window.app.components.recordsList = function(propsArg = {}) {
                 },
                 t.span(
                     { className: "txt" },
-                    "Selected ",
+                    "رکورد انتخاب شده ",
                     t.strong(null, () => data.totalSelected),
-                    () => ` ${data.totalSelected == 1 ? "record" : "records"}`,
+                    // () => ` ${data.totalSelected == 1 ? "record" : "records"}`,
                 ),
                 t.button(
                     {
@@ -723,7 +723,7 @@ window.app.components.recordsList = function(propsArg = {}) {
                         className: "btn sm secondary pill m-r-auto",
                         onclick: () => selectAll(false),
                     },
-                    t.span({ className: "txt" }, "Reset"),
+                    t.span({ className: "txt" }, "ریست"),
                 ),
                 () => {
                     if (props.collection?.type == "view") {
@@ -735,13 +735,13 @@ window.app.components.recordsList = function(propsArg = {}) {
                             className: "btn sm pill outline danger",
                             onclick: () => {
                                 app.modals.confirm(
-                                    "Do you really want to delete the selected records?",
+                                    "آیا واقعاً می‌خواهید رکوردهای انتخاب‌شده را حذف کنید؟",
                                     deleteSelected,
                                 );
                             },
                         },
                         t.i({ className: "ri-delete-bin-7-line", ariaHidden: true }),
-                        t.span({ className: "txt" }, "Delete"),
+                        t.span({ className: "txt" }, "حذف"),
                     );
                 },
                 t.button(

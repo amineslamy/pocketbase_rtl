@@ -20,8 +20,8 @@ function collectionsOverviewModal(settings = {}) {
     const uniqueId = "overview_modal_" + app.utils.randomString();
 
     const tabs = {
-        "Fields and relations": erd,
-        "Rules": rules,
+        "فیلدها و روابط": erd,
+        "قوانین": rules,
     };
 
     const data = store({
@@ -62,7 +62,7 @@ function collectionsOverviewModal(settings = {}) {
                     { className: "col-12" },
                     t.div(
                         { className: "flex" },
-                        t.h6({ className: "modal-title" }, "Collections overview"),
+                        t.h6({ className: "modal-title" }, "نمای کلی جداول"),
                         t.div({ className: "flex-fill" }),
                         t.div(
                             { className: "field" },
@@ -73,7 +73,7 @@ function collectionsOverviewModal(settings = {}) {
                                 checked: () => data.showSystemCollections,
                                 onchange: (e) => data.showSystemCollections = e.target.checked,
                             }),
-                            t.label({ htmlFor: uniqueId + ".showSystemCollections" }, "System collections"),
+                            t.label({ htmlFor: uniqueId + ".showSystemCollections" }, "جداول سیستمی"),
                         ),
                         t.button(
                             {
@@ -159,7 +159,7 @@ function rules(data) {
         { value: "manageRule", label: "قانونِ مدیریت", filter: (c) => c.type == "auth" },
         {
             value: "mfaRule",
-            label: "MFA نقشِ",
+            label: "احراز هویت دو مرحله ای",
             emptyLabel: t.span({ className: "label info" }, "Enabled for everyone"),
             rule: (c) => c.mfa?.rule,
             filter: (c) => c.mfa?.enabled && c.type == "auth",
@@ -216,7 +216,7 @@ function rules(data) {
                             null,
                             t.td(
                                 { colSpan: 99, className: "txt-hint" },
-                                t.p(null, "No collections with the selected rule."),
+                                t.p(null, "هیچ جدولی با قانون انتخاب‌شده وجود ندارد."),
                             ),
                         );
                     }
