@@ -464,7 +464,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                                                     "شما تغییرات ذخیره نشده‌ای دارید. آیا واقعاً می‌خواهید آنها را حذف کنید؟",
                                                     duplicate,
                                                     null,
-                                                    { yesButton: "Yes, discard" },
+                                                    { yesButton: "بله، حذف کن" },
                                                 );
                                             } else {
                                                 duplicate();

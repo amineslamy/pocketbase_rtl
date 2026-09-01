@@ -160,7 +160,7 @@ function rules(data) {
         {
             value: "mfaRule",
             label: "احراز هویت دو مرحله ای",
-            emptyLabel: t.span({ className: "label info" }, "Enabled for everyone"),
+            emptyLabel: t.span({ className: "label info" }, "فعال برای همه"),
             rule: (c) => c.mfa?.rule,
             filter: (c) => c.mfa?.enabled && c.type == "auth",
         },
@@ -257,7 +257,7 @@ function rules(data) {
                                                 return local.activeRuleOption.nullLabel;
                                             }
 
-                                            return t.span({ className: "label success" }, "Superusers only");
+                                            return t.span({ className: "label success" }, "فقط مدیر ارشد");
                                         }
 
                                         if (rule === "") {
@@ -265,7 +265,7 @@ function rules(data) {
                                                 return local.activeRuleOption.emptyLabel;
                                             }
 
-                                            return t.span({ className: "label info" }, "Public");
+                                            return t.span({ className: "label info" }, "عمومی");
                                         }
 
                                         return app.components.codeBlock({

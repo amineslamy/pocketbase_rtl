@@ -89,7 +89,7 @@ export function pageApplicationSettings() {
             ),
             () => save(),
             null,
-            { yesButton: "Yes, save changes" },
+            { yesButton: "بله، تغییرات را ذخیره کن" },
         );
     }
 

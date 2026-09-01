@@ -114,10 +114,10 @@ function logsSettingsModal(modalSettings) {
 
     function confirmLogsDelete() {
         app.modals.confirm(
-            "Do you really want to delete all logs?",
+            "آیا واقعاً می‌خواهید همه لاگ‌ها را حذف کنید؟",
             () => deleteLogs(),
             null,
-            { yesButton: "Yes, delete" },
+            { yesButton: "بله، حذف کن" },
         );
     }
 

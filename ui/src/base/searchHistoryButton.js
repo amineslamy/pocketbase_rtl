@@ -77,12 +77,12 @@ window.app.components.searchHistoryButton = function(propsArg = {}) {
                 return false;
             },
         },
-        t.div({ className: "block p-5" }, t.small({ className: "txt-hint" }, "Search history")),
+        t.div({ className: "block p-5" }, t.small({ className: "txt-hint" }, "تاریخچه جستجو")),
         () => {
             if (!history.items?.length) {
                 return t.div(
                     { rid: "no-history", className: "block p-5" },
-                    t.span(null, "Your recent searches will show up here."),
+                    t.span(null, "جستجوهای اخیر شما در اینجا نمایش داده می‌شوند."),
                 );
             }
 
