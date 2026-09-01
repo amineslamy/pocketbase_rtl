@@ -716,7 +716,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                             t.button(
                                 {
                                     type: "button",
-                                    title: "More options",
+                                    title: "گزینه های بیشتر",
                                     className: () => `btn sm circle transparent ${data.isLoading ? "loading" : ""}`,
                                     disabled: () => data.isLoading,
                                     "html-popovertarget": uniqueId + "modal-header-dropdown",
@@ -1016,7 +1016,7 @@ function sendVerificationDropdownItem(collection, data, modalSettings) {
                     `Do you really want to send verification email to ${data.originalRecord?.email}?`,
                     sendVerificationEmail,
                     null,
-                    { yesButton: "Send" },
+                    { yesButton: "ارسال" },
                 );
             },
         },

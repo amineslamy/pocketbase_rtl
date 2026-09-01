@@ -144,7 +144,7 @@ function recordPreviewModal(rawRecord, modalSettings) {
             ),
             t.button(
                 {
-                    title: "More options",
+                    title: "گزینه های بیشتر",
                     className: () => `btn sm circle transparent m-l-auto ${data.isLoading ? "loading" : ""}`,
                     disabled: () => data.isLoading,
                     "html-popovertarget": uniqueId + "preview-dropdown",

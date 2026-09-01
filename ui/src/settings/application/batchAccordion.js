@@ -8,7 +8,7 @@ export function batchAccordion(pageData) {
         t.summary(
             null,
             t.i({ className: "ri-archive-stack-line", ariaHidden: true }),
-            t.span({ className: "txt" }, "Batch Web API"),
+            t.span({ className: "txt" }, "ارسال چندین درخواست ای پی آی در قالب یک درخواست به سرور"),
             t.div({ className: "flex-fill" }),
             () => {
                 if (pageData.formSettings.batch.enabled) {
@@ -52,7 +52,7 @@ export function batchAccordion(pageData) {
                     { className: "field" },
                     t.label(
                         { htmlFor: "batch.maxRequests" },
-                        t.span({ className: "txt" }, "Max requests in a batch"),
+                        t.span({ className: "txt" }, "حداکثر درخواست‌ها در یک دسته"),
                         t.i({
                             className: "ri-information-line link-faded",
                             ariaDescription: app.attrs.tooltip(
@@ -80,7 +80,7 @@ export function batchAccordion(pageData) {
                     { className: "field" },
                     t.label(
                         { htmlFor: "batch.timeout" },
-                        t.span({ className: "txt" }, "Max processing time (in seconds)"),
+                        t.span({ className: "txt" }, "حداکثر زمان پردازش (بر حسب ثانیه)"),
                     ),
                     t.input({
                         id: "batch.timeout",
@@ -101,7 +101,7 @@ export function batchAccordion(pageData) {
                     { className: "field" },
                     t.label(
                         { htmlFor: "batch.maxBodySize" },
-                        t.span({ className: "txt" }, "Max body size (in bytes)"),
+                        t.span({ className: "txt" }, "حداکثر اندازه بدنه (به بایت)"),
                     ),
                     t.input({
                         id: "batch.maxBodySize",

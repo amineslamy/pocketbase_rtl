@@ -61,7 +61,7 @@ export function trustedProxyAccordion(pageData) {
         t.summary(
             null,
             t.i({ className: "ri-route-line", ariaHidden: true }),
-            t.span({ className: "txt" }, "IP proxy headers"),
+            t.span({ className: "txt" }, "شناسایی آی پی واقعی کاربر"),
             () => {
                 if (proxyInfo.isLoading) {
                     return t.span({ className: "loader sm" });
@@ -109,18 +109,18 @@ export function trustedProxyAccordion(pageData) {
         ),
         t.p(
             { className: "m-t-0" },
-            "Below you should see your real IP. If not - configure the correct proxy header for your environment.",
+            "در زیر باید آی پی واقعی خود را ببینید. اگر اینطور نیست - هدر پروکسی صحیح را برای محیط خود پیکربندی کنید.",
         ),
         t.div(
             { className: "alert info m-b-sm" },
             t.div(
                 { className: "flex gap-5" },
-                t.span(null, "Resolved user IP:"),
+                t.span(null, "آی پی اصلاح شده کاربر:"),
                 t.strong(null, () => proxyInfo.isLoading ? "..." : (proxyInfo.realIP || "N/A")),
             ),
             t.div(
                 { className: "flex gap-5" },
-                t.span(null, "Detected proxy header:"),
+                t.span(null, "هدر پروکسی شناسایی شده:"),
                 t.strong(null, () => proxyInfo.isLoading ? "..." : (proxyInfo.possibleProxyHeader || "N/A")),
             ),
         ),
@@ -129,29 +129,25 @@ export function trustedProxyAccordion(pageData) {
             t.p(
                 null,
                 `
-                When PocketBase is deployed on platforms like Fly or it is accessible through proxies such as
-                NGINX, requests from different users will originate from the same IP address (the IP of the proxy
-                connecting to your PocketBase app).
+                وقتی پاکت بیس روی پلتفرم‌هایی مانند فلای مستقر می‌شود یا از طریق پروکسی‌هایی مانند انجین ایکس قابل دسترسی است، درخواست‌های کاربران مختلف از یک آدرس آی پی  یکسان ارسال می‌شوند.
             `,
             ),
             t.p(
                 null,
                 `
-                In this case to retrieve the actual user IP (used for rate limiting, logging, etc.) you need to
-                properly configure your proxy and list below the trusted headers that PocketBase could use to
-                extract the user IP.
+                در این حالت، برای بازیابی آی پی واقعی کاربر (که برای محدود کردن سرعت، ثبت وقایع و غیره استفاده می‌شود)، باید پروکسی خود را به درستی پیکربندی کنید و هدرهای معتبری را که پاکت بیس می‌تواند برای استخراج آی پی کاربر استفاده کند، در زیر فهرست کنید.
             `,
             ),
-            t.p({ className: "txt-bold" }, `When using such proxy, to avoid spoofing it is recommended to:`),
+            t.p({ className: "txt-bold" }, `هنگام استفاده از چنین پروکسی، برای جلوگیری از جعل، توصیه می‌شود::`),
             t.ul(
                 { className: "txt-bold" },
                 t.li(
                     null,
-                    "use headers that are controlled only by the proxy and cannot be manually set by the users",
+                    "از هدرهایی استفاده کنید که فقط توسط پروکسی کنترل می‌شوند و کاربران نمی‌توانند به صورت دستی آنها را تنظیم کنند.",
                 ),
-                t.li(null, "make sure that the PocketBase server can be accessed ONLY through the proxy"),
+                t.li(null, "مطمئن شوید که دسترسی به سرور پاکت بیس فقط از طریق پروکسی امکان‌پذیر است."),
             ),
-            t.p(null, "You can clear the headers field if PocketBase is not deployed behind a proxy."),
+            t.p(null, "اگر پاکت بیس پشت یک پروکسی مستقر نشده باشد، می‌توانید فیلد هدرها را پاک کنید."),
         ),
         t.div(
             { className: "grid sm" },
@@ -161,12 +157,12 @@ export function trustedProxyAccordion(pageData) {
                     { className: "fields" },
                     t.div(
                         { className: "field" },
-                        t.label({ htmlFor: "trustedProxy.headers" }, "Trusted IP proxy headers"),
+                        t.label({ htmlFor: "trustedProxy.headers" }, "هدرهای پروکسی آی پی قابل اعتماد"),
                         t.input({
                             type: "text",
                             id: "trustedProxy.headers",
                             name: "trustedProxy.headers",
-                            placeholder: "Leave empty to disable",
+                            placeholder: "برای غیرفعال کردن خالی بگذارید",
                             value: () => app.utils.joinNonEmpty(pageData.formSettings.trustedProxy.headers),
                             oninput: (e) => {
                                 const newValue = app.utils.splitNonEmpty(e.target.value, ",");
@@ -199,7 +195,7 @@ export function trustedProxyAccordion(pageData) {
                 ),
                 t.div(
                     { className: "field-help" },
-                    "Comma separated list of headers such as: ",
+                    "فهرست سرتیترها که با کاما از هم جدا شده‌اند، مانند: ",
                     t.div({ className: "inline-flex gap-5" }, () => {
                         return proxyInfo.suggestedProxyHeaders.map((header) => {
                             return t.div({
@@ -220,11 +216,11 @@ export function trustedProxyAccordion(pageData) {
                     { className: "field" },
                     t.label(
                         { htmlFor: "trustedProxy.useLeftmostIP" },
-                        t.span({ className: "txt" }, "IP priority"),
+                        t.span({ className: "txt" }, "اولویت آی‌پی"),
                         t.i({
                             className: "ri-information-line tooltip-right",
                             ariaDescription: app.attrs.tooltip(
-                                "This is in case the proxy returns more than 1 IP as header value. The rightmost IP is usually considered to be the more trustworthy but this could vary depending on the proxy.",
+                                "این در صورتی است که پروکسی بیش از یک آی پی را به عنوان مقدار هدر برگرداند. معمولاً آی پی سمت راست قابل اعتمادتر در نظر گرفته می‌شود، اما این می‌تواند بسته به پروکسی متفاوت باشد.",
                             ),
                         }),
                     ),

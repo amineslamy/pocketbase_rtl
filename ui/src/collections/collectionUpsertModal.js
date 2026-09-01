@@ -426,7 +426,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                                 {
                                     type: "button",
                                     className: "btn sm circle transparent",
-                                    title: "More options",
+                                    title: "گزینه های بیشتر",
                                     "html-popovertarget": uniqueId + "modal-header-dropdown",
                                 },
                                 t.i({ className: "ri-more-line", ariaHidden: true }),

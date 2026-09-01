@@ -104,11 +104,11 @@ export function pageStorageSettings() {
                             { className: "col-lg-12 txt-lg" },
                             t.p(
                                 null,
-                                "By default PocketBase uses and recommends the local file system to store uploaded files because it is more performant, easier to manage and backup.",
+                                "به طور پیش‌فرض، پاکت بیس از سیستم فایل محلی برای ذخیره فایل‌های آپلود شده استفاده می‌کند و آن را توصیه می‌کند، زیرا عملکرد بهتری دارد، مدیریت و پشتیبان‌گیری از آن آسان‌تر است.",
                             ),
                             t.p(
                                 null,
-                                "Alternatively, if you have limited disk space available, you could opt to an S3 compatible external storage.",
+                                "از طرف دیگر، اگر فضای دیسک محدودی دارید، می‌توانید یک حافظه خارجی سازگار با ابری آمازون را انتخاب کنید.",
                             ),
                         ),
                         t.div(

@@ -103,7 +103,7 @@ function mailTestModal(preselectedCollectionIdOrName = "", template = "") {
                 watchers.forEach((w) => w?.unwatch());
             },
         },
-        t.header({ className: "modal-header" }, t.h5({ className: "m-auto" }, "Send test email")),
+        t.header({ className: "modal-header" }, t.h5({ className: "m-auto" }, "ارسال ایمیل تستی")),
         t.form(
             {
                 id: uniqueId,

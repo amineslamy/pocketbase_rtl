@@ -242,7 +242,7 @@ export function rateLimitAccordion(pageData) {
         t.summary(
             null,
             t.i({ className: "ri-pulse-fill", ariaHidden: true }),
-            t.span({ className: "txt" }, "Rate limiting"),
+            t.span({ className: "txt" }, "تعیین سقف مجاز برای درخواست ها"),
             t.div({ className: "flex-fill" }),
             () => {
                 if (pageData.formSettings.rateLimits.enabled) {
@@ -289,7 +289,7 @@ export function rateLimitAccordion(pageData) {
                             className: "link-hint txt-sm m-l-auto",
                             onclick: () => openRateLimitInfoModal(),
                         },
-                        t.em(null, "Learn more about the rate limit rules"),
+                        t.em(null, "درباره قوانین سقف مجاز درخواست ها بیشتر بدانید"),
                     ),
                 ),
             ),
@@ -305,20 +305,20 @@ export function rateLimitAccordion(pageData) {
                             },
                             t.tr(
                                 null,
-                                t.th({ className: "col-label" }, "Rate limit label"),
+                                t.th({ className: "col-label" }, "برچسب محدودیت نرخ"),
                                 t.th(
                                     { className: "col-requests" },
-                                    "Max requests",
+                                    "حداکثر درخواست ها",
                                     t.br(),
-                                    t.small(null, "(per IP)"),
+                                    t.small(null, "(هر آی پی)"),
                                 ),
                                 t.th(
                                     { className: "col-duration" },
-                                    "Interval",
+                                    "فاصله",
                                     t.br(),
-                                    t.small(null, "(in seconds)"),
+                                    t.small(null, "(بر اساس ثانیه)"),
                                 ),
-                                t.th({ className: "col-audience" }, "Targeted users"),
+                                t.th({ className: "col-audience" }, "کاربران تارگت شده"),
                                 t.th({ className: "col-action" }),
                             ),
                         ),
@@ -440,7 +440,7 @@ export function rateLimitAccordion(pageData) {
                                             onclick: () => newRule(),
                                         },
                                         t.i({ className: "ri-add-line", ariaHidden: true }),
-                                        t.span({ className: "txt" }, "Add rate limit rule"),
+                                        t.span({ className: "txt" }, "افزودن قانونِ سقف مجازِ درخواست"),
                                     ),
                                 ),
                             ),
@@ -456,7 +456,7 @@ export function rateLimitAccordion(pageData) {
                         className: () => `btn secondary sm ${!accordionData.showMoreOptions ? "transparent" : ""}`,
                         onclick: () => accordionData.showMoreOptions = !accordionData.showMoreOptions,
                     },
-                    t.span({ className: "txt" }, "More options"),
+                    t.span({ className: "txt" }, "گزینه های بیشتر"),
                     t.i({
                         ariaHidden: true,
                         className: () => accordionData.showMoreOptions ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line",

@@ -63,14 +63,14 @@ export function pageApplicationSettings() {
                 { className: "txt-center" },
                 t.h6(
                     null,
-                    "The ONLY allowed superuser IPs will change to: ",
+                    "فقط آی پی های مجاز کاربر ارشد به موارد زیر تغییر خواهند کرد:",
                     t.br(),
                     t.strong(null, superuserIPs.join(", ")),
                 ),
-                t.p(null, "Please make sure that your IP is in the list or you'll be locked."),
+                t.p(null, "لطفا مطمئن شوید که آی پی شما در لیست وجود دارد، در غیر این صورت مسدود خواهید شد."),
                 t.p(
                     { className: "txt-hint" },
-                    "In case of lockout, you can reset the setting with the ",
+                    "در صورت قفل شدن، می‌توانید تنظیمات را با استفاده از ",
                     t.a(
                         {
                             href: import.meta.env.PB_SUPERUSER_IPS_RESET_DOCS,
@@ -80,11 +80,11 @@ export function pageApplicationSettings() {
                         },
                         t.code(
                             null,
-                            "superuser ips",
+                            "آی پی های کاربران ارشد",
                             t.i({ ariaHidden: true, className: "ri-arrow-right-up-line txt-sm" }),
                         ),
                     ),
-                    " console command.",
+                    " دستور کنسول.",
                 ),
             ),
             () => save(),
@@ -193,7 +193,7 @@ export function pageApplicationSettings() {
                             { className: "col-md-5" },
                             t.div(
                                 { className: "field" },
-                                t.label({ htmlFor: "meta.appName" }, "Application name"),
+                                t.label({ htmlFor: "meta.appName" }, "نام سامانه"),
                                 t.input({
                                     id: "meta.appName",
                                     name: "meta.appName",
@@ -208,7 +208,7 @@ export function pageApplicationSettings() {
                             { className: "col-md-5" },
                             t.div(
                                 { className: "field" },
-                                t.label({ htmlFor: "meta.appURL" }, "Application URL"),
+                                t.label({ htmlFor: "meta.appURL" }, "یو آر ال سامانه"),
                                 t.input({
                                     id: "meta.appURL",
                                     name: "meta.appURL",
@@ -249,7 +249,7 @@ export function pageApplicationSettings() {
                                 }),
                                 t.label(
                                     { htmlFor: "meta.hideControls" },
-                                    t.span({ className: "txt" }, "Hide/Lock collection and record controls"),
+                                    t.span({ className: "txt" }, "کنترل های جداول و رکوردها را مخفی|قفل کنید"),
                                     t.i({
                                         className: "ri-information-line link-hint",
                                         ariaDescription: app.attrs.tooltip(
@@ -340,7 +340,7 @@ function accentColorField(pageData) {
         },
         t.label(
             { htmlFor: uniqueId },
-            t.span({ className: "txt" }, "Accent"),
+            t.span({ className: "txt" }, "تم"),
             t.i({
                 hidden: () => !local.isTooLight,
                 className: "txt-warning ri-alert-line",

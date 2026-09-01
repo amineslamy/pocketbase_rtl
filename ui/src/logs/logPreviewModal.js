@@ -120,7 +120,7 @@ function logPreviewModal(logIdOrModel, settings) {
             t.button(
                 {
                     className: "btn sm circle transparent m-l-auto",
-                    title: "More options",
+                    title: "گزینه های بیشتر",
                     "html-popovertarget": "log-meta-dropdown",
                 },
                 t.i({ className: "ri-more-line", ariaHidden: true }),

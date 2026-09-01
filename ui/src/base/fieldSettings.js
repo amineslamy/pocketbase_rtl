@@ -334,7 +334,7 @@ window.app.components.fieldSettings = function(data, settingsArg = {}) {
                 {
                     hidden: () => !settings.showDuplicate && (!settings.showRemove || data.field.system),
                     type: "button",
-                    title: "More options",
+                    title: "گزینه های بیشتر",
                     className: "btn sm circle transparent secondary more-btn m-l-auto",
                     "html-popovertarget": uniqueId + "_options_dropdown",
                 },

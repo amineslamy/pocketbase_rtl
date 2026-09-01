@@ -105,7 +105,7 @@ export function backupsForm(propsArg = {}) {
                 disabled: () => data.isLoading || data.hasChanges,
                 onclick: () => (data.showForm = !data.showForm),
             },
-            t.span({ className: "txt" }, "Backup options"),
+            t.span({ className: "txt" }, "گزینه‌های پشتیبان‌گیری"),
             t.i({
                 className: () => (data.showForm ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"),
                 ariaHidden: true,
@@ -145,7 +145,7 @@ export function backupsForm(propsArg = {}) {
                                         }
                                     },
                                 }),
-                                t.label({ htmlFor: "enableAutoBackupsToggle" }, "Enable auto backups"),
+                                t.label({ htmlFor: "enableAutoBackupsToggle" }, "فعال سازی پشتیبان گیری خودکار"),
                             ),
                             app.components.slide(
                                 () => data.enableAutoBackups,
@@ -251,7 +251,7 @@ export function backupsForm(propsArg = {}) {
                         t.div(
                             { className: "col-lg-12" },
                             app.components.s3ConfigFields({
-                                toggleLabel: "Store backups in S3 storage",
+                                toggleLabel: "ذخیره نسخه‌های پشتیبان در فضای ذخیره‌سازی ابری",
                                 testFilesystem: "backups",
                                 config: () => data.formSettings.backups.s3,
                             }),

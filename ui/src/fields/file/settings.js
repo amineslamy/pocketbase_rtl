@@ -50,7 +50,7 @@ export function settings(props) {
                             t.i({
                                 className: "ri-information-line link-hint",
                                 ariaDescription: app.attrs.tooltip(
-                                    "Allow files ONLY with the listed mime types.\n Leave empty for no restriction.",
+                                    "فقط فایل‌هایی با انواع MIME ذکر شده مجاز هستند.\n برای عدم محدودیت، خالی بگذارید.",
                                 ),
                             }),
                         ),

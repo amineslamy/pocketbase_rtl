@@ -43,7 +43,7 @@ export function superuserAccordion(pageData) {
         t.summary(
             null,
             t.i({ className: "ri-fingerprint-2-line", ariaHidden: true }),
-            t.span({ className: "txt" }, "Superuser IPs"),
+            t.span({ className: "txt" }, "آی پی های کاربران ارشد"),
             t.div({ className: "flex-fill" }),
             () => {
                 if (pageData.formSettings?.superuserIPs?.length) {
@@ -62,14 +62,14 @@ export function superuserAccordion(pageData) {
         ),
         t.div(
             { className: "content m-b-sm" },
-            t.p(null, "A comma separated list of superusers allowed IPs and subnets."),
+            t.p(null, "فهرستی از آی‌پی‌ها و زیرشبکه‌های مجازِ کاربران ارشد که با کاما از هم جدا شده‌اند."),
             t.p(
                 null,
-                "Enabling this option greatly helps hardening the security of your application because even if someone manage to get their hands on a superuser auth token they will not be able to use it.",
+                "فعال کردن این گزینه به شدت به افزایش امنیت برنامه شما کمک می‌کند، زیرا حتی اگر کسی بتواند به توکن احراز هویت کاربر ارشد دست پیدا کند، قادر به استفاده از آن نخواهد بود.",
             ),
             t.p(
                 null,
-                "In case your IP changes, you can always reset the field value with the ",
+                "در صورتی که آی پی شما تغییر کند، همیشه می توانید مقدار فیلد را با علامت بازنشانی کنید ",
                 t.a(
                     {
                         href: import.meta.env.PB_SUPERUSER_IPS_RESET_DOCS,
@@ -79,7 +79,7 @@ export function superuserAccordion(pageData) {
                     },
                     t.code(
                         null,
-                        "superuser ips",
+                        "آی پی های کاربران ارشد",
                         t.i({ ariaHidden: true, className: "ri-arrow-right-up-line txt-sm" }),
                     ),
                 ),
@@ -92,13 +92,13 @@ export function superuserAccordion(pageData) {
                 { className: "field" },
                 t.label(
                     { htmlFor: "superuserIPs" },
-                    t.span({ className: "txt" }, "Superuser IPs and subnets"),
+                    t.span({ className: "txt" }, "آی‌پی‌ها و زیرشبکه‌های کاربر ارشد"),
                 ),
                 t.input({
                     id: "superuserIPs",
                     name: "superuserIPs",
                     type: "text",
-                    placeholder: "Leave empty for no restriction",
+                    placeholder: "برای بدون محدودیت، خالی بگذارید",
                     value: () => app.utils.joinNonEmpty(pageData.formSettings.superuserIPs),
                     oninput: (e) => {
                         const newValue = app.utils.splitNonEmpty(e.target.value, ",");
@@ -135,7 +135,7 @@ export function superuserAccordion(pageData) {
         ),
         t.div(
             { className: "field-help" },
-            "Comma separated list of IPs and subnets such as: ",
+            "فهرستی از آی پی ها و زیرشبکه‌ها که با کاما از هم جدا شده‌اند، مانند: ",
             t.div(
                 { className: "inline-flex gap-5" },
                 t.div({

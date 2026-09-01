@@ -54,7 +54,7 @@ export function collectionAuthOptionsTab(upsertData) {
                         tabIndex: -1,
                         type: "buttton",
                         className: "m-l-auto label handle txt-bold",
-                        textContent: "Send test email",
+                        textContent: "ارسال ایمیل تستی",
                         onclick: () => app.modals.openMailTest(upsertData.collection?.name),
                     }),
                 ),

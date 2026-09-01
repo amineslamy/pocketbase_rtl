@@ -174,7 +174,7 @@ function backupRestoreModal(key) {
                     className: () => `btn ${data.isSubmitting ? "loading" : ""}`,
                     disabled: () => data.isSubmitting || !data.canSubmit,
                 },
-                t.span({ className: "txt" }, "Restore backup"),
+                t.span({ className: "txt" }, "بازنشانی نسخه پشتیبان"),
             ),
         ),
     );

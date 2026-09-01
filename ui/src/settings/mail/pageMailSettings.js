@@ -114,7 +114,7 @@ export function pageMailSettings(route) {
                         },
                         t.div(
                             { className: "col-lg-12 txt-lg" },
-                            t.p(null, "Configure common settings for sending emails."),
+                            t.p(null, "تنظیمات رایج برای ارسال ایمیل را پیکربندی کنید."),
                         ),
                         t.div(
                             { className: "col-lg-6" },
@@ -162,13 +162,13 @@ export function pageMailSettings(route) {
                                     { htmlFor: "smtp.enabled" },
                                     t.span(
                                         { className: "txt" },
-                                        "Use SMTP mail server ",
+                                        "استفاده از سرور ایمیل SMTP ",
                                         t.strong(null, "(recommended)"),
                                     ),
                                     t.i({
                                         className: "ri-information-line link-faded",
                                         ariaDescription: app.attrs.tooltip(
-                                            `By default PocketBase uses the unix "sendmail" command for sending emails. For better emails deliverability it is recommended to use a SMTP mail server.`,
+                                            `به طور پیش‌فرض پاکت بیس از دستور یونیکس "sendmail" برای ارسال ایمیل استفاده می‌کند. برای ارسال بهتر ایمیل‌ها، توصیه می‌شود از یک سرور ایمیل SMTP استفاده کنید.`,
                                         ),
                                     }),
                                 ),
@@ -263,7 +263,7 @@ export function pageMailSettings(route) {
                                     },
                                     t.span(
                                         { className: "txt" },
-                                        () => data.showMoreOptions ? "Hide more options" : "Show more options",
+                                        () => data.showMoreOptions ? "پنهان کردن گزینه های بیشتر" : "نمایش گزینه های بیشتر",
                                     ),
                                     t.i({
                                         className: () =>
@@ -372,7 +372,7 @@ export function pageMailSettings(route) {
                                             onclick: () => app.modals.openMailTest(),
                                         },
                                         t.i({ className: "ri-mail-check-line", ariaHidden: true }),
-                                        t.span({ className: "txt" }, "Send test email"),
+                                        t.span({ className: "txt" }, "ارسال ایمیل تستی"),
                                     );
                                 },
                             ),

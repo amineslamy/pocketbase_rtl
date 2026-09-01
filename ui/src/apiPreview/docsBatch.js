@@ -72,7 +72,7 @@ export function docsBatch(collection) {
             { className: "alert warning" },
             t.p(
                 { className: "txt-bold" },
-                "The batch Web API need to be explicitly enabled and configured from the ",
+                "API وب دسته‌ای باید به صراحت فعال و پیکربندی شود.",
                 t.a({
                     href: "#/settings",
                     target: "_blank",
@@ -83,7 +83,7 @@ export function docsBatch(collection) {
             ),
             t.p(
                 null,
-                "Because this endpoint process the requests in a single DB transaction it could degrade the performance of your application if not used with proper care and configuration (use smaller max processing and body size limits, avoid large file uploads over slow S3 networks and custom hooks that communicate with slow external APIs).",
+                "از آنجا که این نقطه پایانی درخواست‌ها را در یک تراکنش پایگاه داده واحد پردازش می‌کند، در صورت عدم استفاده با دقت و پیکربندی مناسب (استفاده از حداکثر پردازش و محدودیت‌های اندازه بدنه کوچک‌تر، جلوگیری از آپلود فایل‌های بزرگ در شبکه‌های S3 کند و قلاب‌های سفارشی که با APIهای خارجی کند ارتباط برقرار می‌کنند) می‌تواند عملکرد برنامه شما را کاهش دهد.",
             ),
         ),
         app.components.codeBlockTabs({
