@@ -171,7 +171,7 @@ export function collectionViewQueryTab(upsertData) {
                 { className: "col-12" },
                 t.p(
                     { className: "txt-sm txt-bold" },
-                    "Sample output:",
+                    "نمونه خروجی:",
                 ),
                 t.div(
                     { className: "view-query-sample-wrapper" },

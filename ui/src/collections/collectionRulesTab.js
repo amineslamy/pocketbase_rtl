@@ -24,7 +24,7 @@ export function collectionRulesTab(upsertData) {
                     { className: "flex txt-hint txt-sm" },
                     t.span(
                         { className: "txt" },
-                        "All rules follow the ",
+                        "همه قوانین از اینجا پیروی می‌کنند : ",
                         t.a({
                             target: "_blank",
                             rel: "noopener noreferrer",
@@ -36,7 +36,7 @@ export function collectionRulesTab(upsertData) {
                     t.strong({
                         tabIndex: -1,
                         className: "m-l-auto link-hint",
-                        textContent: () => (local.showRulesInfo ? "Hide available fields" : "Show available fields"),
+                        textContent: () => (local.showRulesInfo ? "عدم نمایش فیلدهای موجود" : "نمایش فیلدهای موجود"),
                         onclick: () => (local.showRulesInfo = !local.showRulesInfo),
                     }),
                 ),
@@ -46,7 +46,7 @@ export function collectionRulesTab(upsertData) {
                         { className: "alert warning m-t-sm" },
                         t.div(
                             { className: "content" },
-                            t.p(null, "The following record fields are available:"),
+                            t.p(null, "فیلدهای رکورد زیر موجود است: "),
                             t.div({ className: "flex flex-wrap gap-5" }, () => {
                                 const identifiers = app.utils.getAllCollectionIdentifiers(upsertData.collection);
                                 return identifiers.map((f) => {
@@ -56,9 +56,9 @@ export function collectionRulesTab(upsertData) {
                             t.hr({ className: "m-t-10 m-b-10" }),
                             t.p(
                                 null,
-                                "The request fields could be accessed with the special ",
+                                "فیلدهای درخواست با استفاده از دستور ویژه قابل دسترسی اند. ",
                                 t.strong(null, "@request"),
-                                " fields:",
+                                " فیلدها:",
                             ),
                             t.div(
                                 { className: "flex flex-wrap gap-5" },
@@ -70,7 +70,7 @@ export function collectionRulesTab(upsertData) {
                             t.hr({ className: "m-t-10 m-b-10" }),
                             t.p(
                                 null,
-                                "You could also add constraints and query other collections using the ",
+                                "همچنین می‌توانید با استفاده از دستور زیر، محدودیت‌ها را اضافه کرده و از مجموعه‌های دیگر پرس‌وجو کنید. ",
                                 t.strong(null, "@collection"),
                                 " field:",
                             ),
@@ -259,7 +259,7 @@ export function collectionRulesTab(upsertData) {
                                     t.strong(null, "create"),
                                     " and ",
                                     t.strong(null, "update"),
-                                    " API rules.",
+                                    " API قوانین.",
                                 ),
                                 t.p(
                                     null,

@@ -35,7 +35,7 @@ export function collectionFieldsTab(upsertData) {
         t.hr(),
         t.p(
             { className: "txt-bold" },
-            "Unique constraints and indexes (",
+            "محدودیت‌ها و شاخص‌های منحصر به فرد (",
             () => upsertData.collection.indexes?.length,
             ")",
         ),

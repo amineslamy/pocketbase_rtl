@@ -460,7 +460,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                                         className: "btn sm outline",
                                         onclick: () => restoreDraft(),
                                     },
-                                    t.span({ className: "txt" }, "Restore draft"),
+                                    t.span({ className: "txt" }, "بازیابی پیش‌نویس"),
                                 ),
                                 t.button(
                                     {
@@ -588,7 +588,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                         onclick: () => data.isLocked = false,
                     },
                     t.i({ className: "ri-lock-unlock-line", ariaHidden: true }),
-                    t.span({ className: "txt" }, "Unlock to save"),
+                    t.span({ className: "txt" }, "برای ذخیره، قفل را باز کنید"),
                 ),
                 t.div(
                     {
@@ -602,7 +602,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                             disabled: () => data.isLocked || data.isFormDisabled,
                             onclick: () => save(),
                         },
-                        t.span({ className: "txt" }, () => (data.isNew ? "ایجاد" : "Save changes")),
+                        t.span({ className: "txt" }, () => (data.isNew ? "ایجاد" : "ذخیره تغییرات")),
                     ),
                     t.button(
                         {
@@ -771,7 +771,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                                         },
                                     },
                                     t.i({ className: "ri-braces-line", ariaHidden: true }),
-                                    t.span({ className: "txt" }, "Copy JSON"),
+                                    t.span({ className: "txt" }, "کپی JSON"),
                                 ),
                                 () => {
                                     if (collection.type == "view") {
@@ -799,7 +799,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                                                 },
                                             },
                                             t.i({ className: "ri-file-copy-line", ariaHidden: true }),
-                                            t.span({ className: "txt" }, "Duplicate"),
+                                            t.span({ className: "txt" }, "تکرار کردن"),
                                         ),
                                         t.hr(),
                                         deleteDropdownItem(collection, data, modalSettings),
@@ -831,7 +831,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                                     ),
                                     onclick: () => data.activeTab = TAB_MAIN,
                                 },
-                                t.span({ className: "txt" }, () => (data.isAuthCollection ? "Account" : "Main")),
+                                t.span({ className: "txt" }, () => (data.isAuthCollection ? "حساب کاربری" : "Main")),
                             ),
                             t.button(
                                 {
@@ -840,7 +840,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                                     className: () => `tab-item ${data.activeTab == TAB_AUTH_PROVIDERS ? "active" : ""}`,
                                     onclick: () => data.activeTab = TAB_AUTH_PROVIDERS,
                                 },
-                                t.span({ className: "txt" }, "Auth providers"),
+                                t.span({ className: "txt" }, "ارائه دهندگان مجوز"),
                             ),
                         ),
                     );
@@ -923,7 +923,7 @@ function resetTokenKeyDropdownItem(collection, data, modalSettings) {
             onclick: (e) => {
                 e.target.closest(".dropdown").hidePopover();
                 app.modals.confirm(
-                    "Do you really want to reset all issued tokens for the selected auth record?",
+                    "آیا واقعاً می‌خواهید همه نشانه‌های صادر شده را برای رکورد تأیید اعتبار انتخاب شده بازنشانی کنید؟",
                     resetTokenKey,
                     null,
                     { yesButton: "Reset all tokens" },
@@ -931,7 +931,7 @@ function resetTokenKeyDropdownItem(collection, data, modalSettings) {
             },
         },
         t.i({ className: "ri-reset-left-line", ariaHidden: true }),
-        t.span({ className: "txt" }, "Reset issued tokens"),
+        t.span({ className: "txt" }, "بازنشانی توکن‌های صادر شده"),
     );
 }
 
@@ -968,15 +968,15 @@ function sendPasswordResetEmailDropdownItem(collection, data, modalSettings) {
             onclick: (e) => {
                 e.target.closest(".dropdown").hidePopover();
                 app.modals.confirm(
-                    `Do you really want to send password reset email to ${data.originalRecord?.email}?`,
+                    `آیا واقعاً می‌خواهید ایمیل بازنشانی رمز عبور را برای ${data.originalRecord?.email}?`,
                     sendPasswordResetEmail,
                     null,
-                    { yesButton: "Send" },
+                    { yesButton: "بفرست" },
                 );
             },
         },
         t.i({ className: "ri-mail-lock-line", ariaHidden: true }),
-        t.span({ className: "txt" }, "Send password reset email"),
+        t.span({ className: "txt" }, "ارسال ایمیل بازنشانی رمز عبور"),
     );
 }
 
@@ -1013,7 +1013,7 @@ function sendVerificationDropdownItem(collection, data, modalSettings) {
             onclick: (e) => {
                 e.target.closest(".dropdown").hidePopover();
                 app.modals.confirm(
-                    `Do you really want to send verification email to ${data.originalRecord?.email}?`,
+                    `آیا واقعاً می‌خواهید ایمیل تأیید را ارسال کنید؟ ${data.originalRecord?.email}?`,
                     sendVerificationEmail,
                     null,
                     { yesButton: "ارسال" },
@@ -1021,7 +1021,7 @@ function sendVerificationDropdownItem(collection, data, modalSettings) {
             },
         },
         t.i({ className: "ri-mail-check-line", ariaHidden: true }),
-        t.span({ className: "txt" }, "Send verification email"),
+        t.span({ className: "txt" }, "ارسال ایمیل تأیید"),
     );
 }
 
@@ -1036,7 +1036,7 @@ function impersonateDropdownItem(collection, data, modalSettings) {
             },
         },
         t.i({ className: "ri-id-card-line", ariaHidden: true }),
-        t.span({ className: "txt" }, "Impersonate"),
+        t.span({ className: "txt" }, "ورود به جای کاربر"),
     );
 }
 
@@ -1084,7 +1084,7 @@ function deleteDropdownItem(collection, data, modalSettings) {
             },
         },
         t.i({ className: "ri-delete-bin-7-line", ariaHidden: true }),
-        t.span({ className: "txt" }, "Delete"),
+        t.span({ className: "txt" }, "حذف"),
     );
 }
 
@@ -1127,12 +1127,12 @@ function authFieldEmail(collection, data) {
                     {
                         type: "button",
                         className: () => `btn sm transparent ${data.record.emailVisibility ? "success" : "secondary"}`,
-                        ariaDescription: app.attrs.tooltip("Make email public or private", "top-right"),
+                        ariaDescription: app.attrs.tooltip("ایمیل را به صورت عمومی نمایش دهد|ندهد", "top-right"),
                         onclick: () => {
                             data.record.emailVisibility = !data.record.emailVisibility;
                         },
                     },
-                    t.span({ className: "txt" }, "Public: ", () => (data.record.emailVisibility ? "On" : "Off")),
+                    t.span({ className: "txt" }, "عمومی: ", () => (data.record.emailVisibility ? "فعال" : "غیرفعال")),
                 ),
             ),
         ),
@@ -1147,7 +1147,7 @@ function authFieldEmail(collection, data) {
 function authFieldVerified(collection, data) {
     const verifiedField = collection.fields.find((f) => f.name == "verified");
     if (!verifiedField) {
-        console.warn("missing expected verified field");
+        console.warn("فیلد تأیید شده مورد انتظار وجود ندارد");
         return;
     }
 
@@ -1172,13 +1172,13 @@ function authFieldVerified(collection, data) {
         }
 
         app.modals.confirm(
-            `Do you really want to manually change the verified account state from "${!data.record
-                .verified}" to "${data.record.verified}"?`,
+            `آیا واقعاً می‌خواهید وضعیت حساب تأیید شده را به صورت دستی تغییر دهید؟  "${!data.record
+                .verified}" یا "${data.record.verified}"?`,
             null,
             () => {
                 data.record.verified = !data.record.verified;
             },
-            { yesButton: "Yes, " + (data.record.verified ? "verify" : "unverify") },
+            { yesButton: "بله, " + (data.record.verified ? "تایید" : "عدم تایید") },
         );
     });
 
@@ -1250,7 +1250,7 @@ function authFieldPassword(collection, data) {
                     }
                 },
             }),
-            t.label({ htmlFor: uniqueId + "_change" }, t.span({ className: "txt" }, "change password")),
+            t.label({ htmlFor: uniqueId + "_change" }, t.span({ className: "txt" }, "تغییر کلمه عبور")),
         ),
         app.components.slide(
             () => local.isNew || local.changePassword,
@@ -1261,7 +1261,7 @@ function authFieldPassword(collection, data) {
                     t.label(
                         { htmlFor: uniqueId + "_password" },
                         t.i({ className: "ri-lock-line", ariaHidden: true }),
-                        t.span({ className: "txt" }, "Password"),
+                        t.span({ className: "txt" }, "کلمه عبور"),
                     ),
                     t.input({
                         type: "password",
@@ -1288,7 +1288,7 @@ function authFieldPassword(collection, data) {
                     t.label(
                         { htmlFor: uniqueId + "_password_confirm" },
                         t.i({ className: "ri-lock-line", ariaHidden: true }),
-                        t.span({ className: "txt" }, "Confirm"),
+                        t.span({ className: "txt" }, "تایید"),
                     ),
                     t.input({
                         type: "password",
@@ -1407,7 +1407,7 @@ function authProvidersTab(collection, data) {
                     if (!local.externalAuths.length) {
                         return t.div(
                             { className: "list-item" },
-                            t.div({ className: "block txt-hint txt-center" }, "No external auth providers found."),
+                            t.div({ className: "block txt-hint txt-center" }, "هیچ ارائه‌دهنده‌ی احراز هویت خارجی یافت نشد."),
                         );
                     }
 
@@ -1463,7 +1463,7 @@ function authProvidersTab(collection, data) {
                     className: "btn transparent m-r-auto",
                     onclick: () => app.modals.close(),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
         ),
     ];

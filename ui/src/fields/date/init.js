@@ -6,7 +6,7 @@ window.app = window.app || {};
 window.app.fieldTypes = window.app.fieldTypes || {};
 window.app.fieldTypes.date = {
     icon: "ri-calendar-line",
-    label: "Datetime",
+    label: "تاریخ|ساعت",
     settings,
     input,
     view,

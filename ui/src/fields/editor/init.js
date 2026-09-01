@@ -6,7 +6,7 @@ window.app = window.app || {};
 window.app.fieldTypes = window.app.fieldTypes || {};
 window.app.fieldTypes.editor = {
     icon: "ri-edit-2-line",
-    label: "Rich editor",
+    label: "ویرایشگر متن",
     settings,
     input,
     view,

@@ -6,7 +6,7 @@ window.app = window.app || {};
 window.app.fieldTypes = window.app.fieldTypes || {};
 window.app.fieldTypes.bool = {
     icon: "ri-toggle-line",
-    label: "Bool",
+    label: "دو مقداری",
     settings,
     input,
     view,

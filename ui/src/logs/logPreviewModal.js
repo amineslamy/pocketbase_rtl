@@ -135,7 +135,7 @@ function logPreviewModal(logIdOrModel, settings) {
                         },
                     },
                     t.i({ className: "ri-braces-line", ariaHidden: true }),
-                    t.span({ className: "txt" }, "Copy JSON"),
+                    t.span({ className: "txt" }, "کپی JSON"),
                 );
             }),
         ),

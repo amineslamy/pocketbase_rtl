@@ -33,23 +33,23 @@ window.app.collectionTypes = {
     "base": {
         "icon": "ri-folder-2-line",
         "tabs": {
-            "Fields": collectionFieldsTab,
-            "API rules": collectionRulesTab,
+            "فیلدها": collectionFieldsTab,
+            "API قوانین": collectionRulesTab,
         },
     },
     "view": {
         "icon": "ri-table-line",
         "tabs": {
-            "Query": collectionViewQueryTab,
-            "API rules": collectionRulesTab,
+            "کوئری": collectionViewQueryTab,
+            "API قوانین": collectionRulesTab,
         },
     },
     "auth": {
         "icon": "ri-group-line",
         "tabs": {
-            "Fields": collectionFieldsTab,
-            "API rules": collectionRulesTab,
-            "Options": collectionAuthOptionsTab,
+            "فیلدها": collectionFieldsTab,
+            "API قوانین": collectionRulesTab,
+            "گزینه ها": collectionAuthOptionsTab,
         },
     },
 };
@@ -86,7 +86,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
             return Object.keys(app.collectionTypes).map((type) => {
                 return {
                     value: type,
-                    label: app.utils.sentenize(type, false) + " collection",
+                    label: app.utils.sentenize(type, false) + " جدول",
                 };
             });
         },
@@ -446,7 +446,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                                             app.utils.copyToClipboard(
                                                 JSON.stringify(data.originalCollection, null, 2),
                                             );
-                                            app.toasts.success("Collection copied to clipboard!");
+                                            app.toasts.success("جدول با موفقیت به کلیپ بورد منتقل شد");
                                         },
                                     },
                                     t.i({ className: "ri-braces-line", ariaHidden: true }),
@@ -509,7 +509,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                                 name: "name",
                                 required: true,
                                 spellcheck: false,
-                                placeholder: "e.g. posts",
+                                placeholder: "نام جدول را اینجا بنویسید",
                                 autofocus: () => data.isNew,
                                 disabled: () => !data.isNew && data.collection?.system,
                                 value: () => data.collection.name || "",
@@ -843,21 +843,21 @@ function truncateDropdownItem(data, modalSettings) {
                         null,
                         t.h6(
                             { className: "block txt-center" },
-                            "Do you really want to delete all records of the collection?",
+                            "آیا واقعاً می‌خواهید تمام رکوردهای این جدول را حذف کنید؟",
                         ),
                         t.div(
                             { className: "confirm-collection-label txt-bold m-t-sm m-b-sm" },
-                            "Type the collection name ",
+                            "نام جدول را تایپ کنید ",
                             t.div(
                                 { className: "label" },
                                 () => data.originalCollection.name,
                                 app.components.copyButton(() => data.originalCollection?.name),
                             ),
-                            " to confirm:",
+                            " برای خالی کردن داده های جدول:",
                         ),
                         t.div(
                             { className: "field" },
-                            t.label({ htmlFor: uniqueId + ".confirm_name" }, "Collection name"),
+                            t.label({ htmlFor: uniqueId + ".confirm_name" }, "نام جدول"),
                             t.input({
                                 id: uniqueId + ".confirm_name",
                                 type: "text",
@@ -885,7 +885,7 @@ function truncateDropdownItem(data, modalSettings) {
             },
         },
         t.i({ className: "ri-eraser-line", ariaHidden: true }),
-        t.span({ className: "txt" }, "کوتاه کردن"),
+        t.span({ className: "txt" }, "خالی کردن جدول"),
     );
 }
 
@@ -915,7 +915,7 @@ function deleteDropdownItem(data, modalSettings) {
 
             app.utils.removeByKey(app.store.collections, "id", data.originalCollection.id);
 
-            app.toasts.success(`Successfully deleted collection "${data.originalCollection.name}".`);
+            app.toasts.success(`جدول با موفقیت حذف شد "${data.originalCollection.name}".`);
 
             local.isSubmitting = false;
 
@@ -948,22 +948,22 @@ function deleteDropdownItem(data, modalSettings) {
                                     return "Do you really want to delete the selected collection?";
                                 }
 
-                                return "Do you really want to delete the selected collection and all its records";
+                                return "آیا واقعاً می‌خواهید جدول انتخاب‌شده و تمام رکوردهای آن را حذف کنید؟";
                             },
                         ),
                         t.div(
                             { className: "confirm-collection-label txt-bold m-t-sm m-b-sm" },
-                            "Type the collection name ",
+                            "نام جدول را تایپ کنید ",
                             t.div(
                                 { className: "label" },
                                 () => data.originalCollection.name,
                                 app.components.copyButton(() => data.originalCollection?.name),
                             ),
-                            " to confirm:",
+                            " برای تایید:",
                         ),
                         t.div(
                             { className: "field" },
-                            t.label({ htmlFor: uniqueId + ".confirm_name" }, "Collection name"),
+                            t.label({ htmlFor: uniqueId + ".confirm_name" }, "نام جدول"),
                             t.input({
                                 id: uniqueId + ".confirm_name",
                                 type: "text",
