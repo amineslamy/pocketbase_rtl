@@ -124,11 +124,11 @@ function request(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "An error occurred while validating the submitted data.",
+                  "message": "هنگام اعتبارسنجی داده‌های ارسالی، خطایی رخ داد.",
                   "data": {
                     "email": {
                       "code": "validation_required",
-                      "message": "Missing required value."
+                      "message": "مقدار مورد نیاز وجود ندارد."
                     }
                   }
                 }
@@ -184,11 +184,11 @@ function confirm(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "An error occurred while validating the submitted data.",
+                  "message": "هنگام اعتبارسنجی داده‌های ارسالی، خطایی رخ داد.",
                   "data": {
                     "token": {
                       "code": "validation_required",
-                      "message": "Missing required value."
+                      "message": "مقدار مورد نیاز وجود ندارد."
                     }
                   }
                 }

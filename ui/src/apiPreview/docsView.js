@@ -27,7 +27,7 @@ export function docsView(collection) {
             value: `
                 {
                   "status": 403,
-                  "message": "Only superusers can access this action.",
+                  "message": "فقط کاربران ارشد می‌توانند به این اقدام دسترسی داشته باشند.",
                   "data": {}
                 }
             `,
@@ -38,7 +38,7 @@ export function docsView(collection) {
         value: `
             {
               "status": 404,
-              "message": "The requested resource wasn't found.",
+              "message": "منبع مورد نظر یافت نشد.",
               "data": {}
             }
         `,

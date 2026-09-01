@@ -271,7 +271,7 @@ export function pageCollections(route) {
                                 onclick: () => app.modals.openRecordUpsert(app.store.activeCollection),
                             },
                             t.i({ className: "ri-add-line", ariaHidden: true }),
-                            t.span({ className: "txt", textContent: "New record" }),
+                            t.span({ className: "txt", textContent: "رکورد جدید" }),
                         );
                     },
                 ),
@@ -296,7 +296,7 @@ export function pageCollections(route) {
                         if (app.store.collections?.length) {
                             return "Select collection from the sidebar.";
                         }
-                        return "No collections found.";
+                        return "هیچ جدولی پیدا نشد";
                     },
                 ),
             ),

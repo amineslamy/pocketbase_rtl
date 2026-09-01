@@ -13,7 +13,7 @@ export function docsDelete(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "Failed to delete record. Make sure that the record is not part of a required relation reference.",
+                  "message": "حذف رکورد ناموفق بود. مطمئن شوید که رکورد بخشی از مرجع رابطه‌ی الزامی نیست.",
                   "data": {}
                 }
             `,
@@ -25,7 +25,7 @@ export function docsDelete(collection) {
             value: `
                 {
                   "status": 403,
-                  "message": "Only superusers can access this action.",
+                  "message": "فقط کاربران ارشد می‌توانند به این اقدام دسترسی داشته باشند.",
                   "data": {}
                 }
             `,
@@ -36,7 +36,7 @@ export function docsDelete(collection) {
         value: `
             {
               "status": 404,
-              "message": "The requested resource wasn't found.",
+              "message": "منبع مورد نظر یافت نشد.",
               "data": {}
             }
         `,

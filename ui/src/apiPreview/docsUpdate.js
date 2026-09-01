@@ -34,11 +34,11 @@ export function docsUpdate(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "Failed to create record.",
+                  "message": "ایجاد رکورد ناموفق بود.",
                   "data": {
                     "${tableFields.find((f) => !f.primaryKey)?.name || "someField"}": {
                       "code": "validation_required",
-                      "message": "Missing required value."
+                      "message": "مقدار مورد نیاز وجود ندارد."
                     }
                   }
                 }
@@ -51,7 +51,7 @@ export function docsUpdate(collection) {
             value: `
                 {
                   "status": 403,
-                  "message": "Only superusers can perform this action.",
+                  "message": "فقط کاربران ارشد می‌توانند این عمل را انجام دهند.",
                   "data": {}
                 }
             `,
@@ -62,7 +62,7 @@ export function docsUpdate(collection) {
         value: `
             {
               "status": 404,
-              "message": "The requested resource wasn't found.",
+              "message": "منبع مورد نظر یافت نشد.",
               "data": {}
             }
         `,

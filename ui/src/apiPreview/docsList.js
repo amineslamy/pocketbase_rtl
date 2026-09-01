@@ -35,7 +35,7 @@ export function docsList(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "Something went wrong while processing your request.",
+                  "message": "هنگام پردازش درخواست شما، مشکلی پیش آمد.",
                   "data": {}
                 }
             `,
@@ -47,7 +47,7 @@ export function docsList(collection) {
             value: `
                 {
                   "status": 403,
-                  "message": "Only superusers can access this action.",
+                  "message": "فقط کاربران ارشد می‌توانند به این اقدام دسترسی داشته باشند.",
                   "data": {}
                 }
             `,

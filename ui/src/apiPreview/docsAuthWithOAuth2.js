@@ -38,11 +38,11 @@ export function docsAuthWithOAuth2(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "An error occurred while submitting the form.",
+                  "message": "هنگام ارسال فرم خطایی رخ داد.",
                   "data": {
                     "provider": {
                       "code": "validation_required",
-                      "message": "Missing required value."
+                      "message": "مقدار مورد نیاز وجود ندارد."
                     }
                   }
                 }

@@ -152,11 +152,11 @@ function request(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "An error occurred while validating the submitted data.",
+                  "message": "هنگام اعتبارسنجی داده‌های ارسالی، خطایی رخ داد.",
                   "data": {
                     "newEmail": {
                       "code": "validation_required",
-                      "message": "Missing required value."
+                      "message": "مقدار مورد نیاز وجود ندارد."
                     }
                   }
                 }
@@ -167,7 +167,7 @@ function request(collection) {
             value: `
                 {
                   "status": 401,
-                  "message": "The request requires valid record authorization token to be set.",
+                  "message": "این درخواست نیاز به تنظیم توکن مجوز رکورد معتبر دارد.",
                   "data": {}
                 }
             `,
@@ -177,7 +177,7 @@ function request(collection) {
             value: `
                 {
                   "status": 403,
-                  "message": "The authorized record model is not allowed to perform this action.",
+                  "message": "مدل رکورد مجاز، مجاز به انجام این عمل نیست.",
                   "data": {}
                 }
             `,
@@ -233,11 +233,11 @@ function confirm(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "An error occurred while validating the submitted data.",
+                  "message": "هنگام اعتبارسنجی داده‌های ارسالی، خطایی رخ داد.",
                   "data": {
                     "token": {
                       "code": "validation_required",
-                      "message": "Missing required value."
+                      "message": "مقدار مورد نیاز وجود ندارد."
                     }
                   }
                 }

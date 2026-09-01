@@ -29,19 +29,19 @@ export function docsBatch(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "Batch transaction failed.",
+                  "message": "تراکنش دسته‌ای ناموفق بود.",
                   "data": {
                     "requests": {
                       "1": {
                         "code": "batch_request_failed",
-                        "message": "Batch request failed.",
+                        "message": "درخواست دسته‌ای ناموفق بود.",
                         "response": {
                           "status": 400,
-                          "message": "Failed to create record.",
+                          "message": "ایجاد رکورد ناموفق بود.",
                           "data": {
                             "id": {
                               "code": "validation_min_text_constraint",
-                              "message": "Must be at least 3 character(s).",
+                              "message": "باید حداقل ۳ کاراکتر باشد.",
                               "params": { "min": 3 }
                             }
                           }
@@ -57,7 +57,7 @@ export function docsBatch(collection) {
             value: `
                 {
                   "status": 403,
-                  "message": "Batch requests are not allowed.",
+                  "message": "درخواست‌های دسته‌ای مجاز نیستند.",
                   "data": {}
                 }
             `,

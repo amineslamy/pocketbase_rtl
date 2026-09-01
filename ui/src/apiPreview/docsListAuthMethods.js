@@ -17,7 +17,7 @@ export function docsListAuthMethods(collection) {
                     value: `
                         {
                           "status": 404,
-                          "message": "Missing collection context.",
+                          "message": "زمینه‌ی مجموعه وجود ندارد.",
                           "data": {}
                         }
                     `,

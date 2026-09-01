@@ -119,7 +119,7 @@ export function collectionsSidebar() {
 
             return t.div(
                 { className: "block p-t-base txt-center txt-hint" },
-                t.p(null, "No collections found."),
+                t.p(null, "هیچ جدولی پیدا نشد."),
                 t.button({
                     type: "button",
                     className: "btn sm secondary",

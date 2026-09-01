@@ -26,7 +26,7 @@ export function docsAuthRefresh(collection) {
             value: `
                 {
                   "status": 401,
-                  "message": "The request requires valid record authorization token to be set.",
+                  "message": "این درخواست نیاز به تنظیم توکن مجوز رکورد معتبر دارد.",
                   "data": {}
                 }
             `,
@@ -36,7 +36,7 @@ export function docsAuthRefresh(collection) {
             value: `
                 {
                   "status": 403,
-                  "message": "The authorized record model is not allowed to perform this action.",
+                  "message": "مدل رکورد مجاز، مجاز به انجام این عمل نیست.",
                   "data": {}
                 }
             `,
@@ -46,7 +46,7 @@ export function docsAuthRefresh(collection) {
             value: `
                 {
                   "status": 404,
-                  "message": "Missing auth record context.",
+                  "message": "زمینه رکورد احراز هویت وجود ندارد.",
                   "data": {}
                 }
             `,

@@ -32,11 +32,11 @@ export function docsAuthWithPassword(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "Failed to authenticate.",
+                  "message": "احراز هویت انجام نشد.",
                   "data": {
                     "identity": {
                       "code": "validation_required",
-                      "message": "Missing required value."
+                      "message": "مقدار مورد نیاز وجود ندارد."
                     }
                   }
                 }

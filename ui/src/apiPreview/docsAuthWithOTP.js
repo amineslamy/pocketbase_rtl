@@ -163,11 +163,11 @@ function otpRequest(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "An error occurred while validating the submitted data.",
+                  "message": "هنگام اعتبارسنجی داده‌های ارسالی، خطایی رخ داد.",
                   "data": {
                     "email": {
                       "code": "validation_is_email",
-                      "message": "Must be a valid email address."
+                      "message": "باید یک آدرس ایمیل معتبر باشد."
                     }
                   }
                 }
@@ -178,7 +178,7 @@ function otpRequest(collection) {
             value: `
                 {
                   "status": 429,
-                  "message": "You've send too many OTP requests, please try again later.",
+                  "message": "شما درخواست‌های OTP زیادی ارسال کرده‌اید، لطفاً بعداً دوباره امتحان کنید.",
                   "data": {}
                 }
             `,
@@ -245,11 +245,11 @@ function otpAuth(collection) {
             value: `
                 {
                   "status": 400,
-                  "message": "Failed to authenticate.",
+                  "message": "احراز هویت انجام نشد.",
                   "data": {
                     "otpId": {
                       "code": "validation_required",
-                      "message": "Missing required value."
+                      "message": "مقدار مورد نیاز وجود ندارد."
                     }
                   }
                 }
