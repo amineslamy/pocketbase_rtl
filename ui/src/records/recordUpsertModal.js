@@ -577,7 +577,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                         disabled: () => data.isSaving,
                         onclick: () => app.modals.close(modal),
                     },
-                    t.span({ className: "txt" }, "Close"),
+                    t.span({ className: "txt" }, "بستن"),
                 ),
                 t.button(
                     {
@@ -602,7 +602,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                             disabled: () => data.isLocked || data.isFormDisabled,
                             onclick: () => save(),
                         },
-                        t.span({ className: "txt" }, () => (data.isNew ? "Create" : "Save changes")),
+                        t.span({ className: "txt" }, () => (data.isNew ? "ایجاد" : "Save changes")),
                     ),
                     t.button(
                         {
@@ -625,7 +625,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                                     save(false);
                                 },
                             },
-                            t.span({ className: "txt" }, "Save and continue"),
+                            t.span({ className: "txt" }, "ذخیره و ادامه"),
                             t.small({ className: "txt-hint" }, "(Ctrl+S)"),
                         ),
                         t.hr(),
@@ -638,7 +638,7 @@ function recordUpsertModal(collection, rawRecord, modalSettings) {
                                     resetForm();
                                 },
                             },
-                            t.span({ className: "txt" }, "Reset form"),
+                            t.span({ className: "txt" }, "بازنشانی فرم"),
                         ),
                     ),
                 ),

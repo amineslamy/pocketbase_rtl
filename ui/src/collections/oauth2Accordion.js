@@ -161,7 +161,7 @@ export function oauth2Accordion(collection) {
                                                 });
                                             },
                                         },
-                                        t.span({ className: "txt" }, "Settings"),
+                                        t.span({ className: "txt" }, "تنظیمات"),
                                     ),
                                     t.hr(),
                                     t.button(
@@ -187,7 +187,7 @@ export function oauth2Accordion(collection) {
                                                 );
                                             },
                                         },
-                                        t.span({ className: "txt" }, "Remove"),
+                                        t.span({ className: "txt" }, "حذف"),
                                     ),
                                 ),
                             ),
@@ -230,7 +230,7 @@ export function oauth2Accordion(collection) {
                         className: () => `btn secondary sm ${data.showMapping ? "" : "transparent"}`,
                         onclick: () => (data.showMapping = !data.showMapping),
                     },
-                    t.span({ className: "txt" }, "Optional users create fields mapping"),
+                    t.span({ className: "txt" }, "کاربران اختیاری نقشه فیلدها را ایجاد می کنند"),
                     t.i({
                         className: () => (data.showMapping ? "ri-arrow-drop-up-line" : "ri-arrow-drop-down-line"),
                         ariaHidden: true,

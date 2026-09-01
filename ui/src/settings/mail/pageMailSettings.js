@@ -120,7 +120,7 @@ export function pageMailSettings(route) {
                             { className: "col-lg-6" },
                             t.div(
                                 { className: "field" },
-                                t.label({ htmlFor: "meta.senderName" }, "Sender name"),
+                                t.label({ htmlFor: "meta.senderName" }, "نام ارسال کننده"),
                                 t.input({
                                     id: "meta.senderName",
                                     name: "meta.senderName",
@@ -135,7 +135,7 @@ export function pageMailSettings(route) {
                             { className: "col-lg-6" },
                             t.div(
                                 { className: "field" },
-                                t.label({ htmlFor: "meta.senderAddress" }, "Sender address"),
+                                t.label({ htmlFor: "meta.senderAddress" }, "آدرس ایمیل ارسال کننده"),
                                 t.input({
                                     id: "meta.senderAddress",
                                     name: "meta.senderAddress",

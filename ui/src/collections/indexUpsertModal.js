@@ -264,7 +264,7 @@ function indexUpsertModal(collection, index = "", settings = {}) {
                     "disabled": () => !data.canSave,
                     "className": () => "btn expanded",
                 },
-                t.span({ className: "txt" }, "Set index"),
+                t.span({ className: "txt" }, "تنظیم شاخص"),
             ),
         ),
     );

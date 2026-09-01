@@ -268,7 +268,7 @@ function logPreviewModal(logIdOrModel, settings) {
                     onclick: () => downloadJSON(data.log),
                 },
                 t.i({ className: "ri-download-line", ariaHidden: true }),
-                t.span({ className: "txt" }, "Download JSON"),
+                t.span({ className: "txt" }, "دانلود JSON"),
             ),
         ),
     );

@@ -60,7 +60,7 @@ function providerPickerModal(settings = {}) {
         },
         t.header(
             { className: "modal-header" },
-            t.h6({ className: "modal-title" }, t.span({ className: "txt" }, "Select OAuth2 provider")),
+            t.h6({ className: "modal-title" }, t.span({ className: "txt" }, "ارائه دهنده OAuth2 را انتخاب کنید")),
         ),
         t.div(
             { className: "modal-content" },

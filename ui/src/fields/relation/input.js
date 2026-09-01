@@ -186,7 +186,7 @@ export function input(props) {
                 },
             },
             t.i({ className: "ri-magic-line", ariaHidden: true }),
-            t.span({ className: "txt" }, "Open records picker"),
+            t.span({ className: "txt" }, "انتخابگر رکوردها را باز کنید "),
         ),
     );
 

@@ -10,7 +10,7 @@ const defaultSettings = {
     collection: "", // model, id or name
     selectedIds: [],
     maxSelect: 1,
-    btnText: "Set selection",
+    btnText: "انتخاب",
     onselect: function(records) {},
 };
 
@@ -371,7 +371,7 @@ function recordsPickerModal(settings = defaultSettings) {
                     },
                     t.div(
                         { className: "content txt-hint" },
-                        t.span({ className: "txt" }, "No records found."),
+                        t.span({ className: "txt" }, "هیچ رکوردی پیدا نشد."),
                         t.button({
                             type: "button",
                             className: "btn sm secondary",
@@ -388,9 +388,9 @@ function recordsPickerModal(settings = defaultSettings) {
                 { className: "block m-t-base" },
                 t.p(
                     { className: "txt-bold" },
-                    () => `Selected (${data.selected.length} of max ${settings.maxSelect || 1})`,
+                    () => `انتخاب شده (${data.selected.length} از حداکثر ${settings.maxSelect || 1})`,
                 ),
-                t.span({ className: "txt-hint", hidden: () => data.selected }, "No selected records."),
+                t.span({ className: "txt-hint", hidden: () => data.selected }, "هیچ رکوردی انتخاب نشده."),
                 app.components.sortable({
                     className: "records-picker-selected-list",
                     data: () => data.selected,
@@ -423,7 +423,7 @@ function recordsPickerModal(settings = defaultSettings) {
                     className: "btn transparent m-r-auto",
                     onclick: () => close(),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             // image thumb selector
             () => {

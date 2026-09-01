@@ -202,7 +202,7 @@ export function pageExportCollections(route) {
                         t.button(
                             { className: "btn", onclick: download },
                             t.i({ className: "ri-download-line", ariaHidden: true }),
-                            t.span({ className: "txt" }, "Download as JSON"),
+                            t.span({ className: "txt" }, "دانلود به صورت JSON"),
                         ),
                     ),
                 );
