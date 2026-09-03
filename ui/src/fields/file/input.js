@@ -206,7 +206,7 @@ export function input(props) {
                                 hidden: () => !isDeleted(nameOrFile),
                                 onclick: () => restoreDeleted(nameOrFile),
                             },
-                            t.span({ className: "txt" }, "Restore"),
+                            t.span({ className: "txt" }, "بازگرداندن"),
                         ),
                     ),
                 );

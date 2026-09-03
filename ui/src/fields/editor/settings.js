@@ -32,7 +32,7 @@ export function settings(props) {
                             min: 0,
                             step: 1,
                             max: Number.MAX_SAFE_INTEGER,
-                            placeholder: "Default to max ~5MB",
+                            placeholder: "پیش‌فرض روی حداکثر حدود ۵ مگابایت",
                             value: () => props.field.maxSize || "",
                             oninput: (e) => {
                                 // temp skip invalid numbers with leading 0 while typing to avoid reseting the entire input
@@ -78,7 +78,7 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".required" },
-                    t.span({ className: "txt" }, "Required"),
+                    t.span({ className: "txt" }, "ضروری"),
                     t.i({
                         className: "ri-information-line link-hint",
                         ariaDescription: app.attrs.tooltip("Requires the field value to be nonempty string."),
@@ -97,7 +97,7 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".convertURLs" },
-                    t.span({ className: "txt" }, "Strip URLs domain"),
+                    t.span({ className: "txt" }, "حذف دامنه یو آر ال"),
                     t.i({
                         className: "ri-information-line link-hint",
                         ariaDescription: app.attrs.tooltip(

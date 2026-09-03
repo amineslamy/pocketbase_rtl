@@ -248,7 +248,7 @@ export function oauth2Accordion(collection) {
                                 app.components.select({
                                     id: uniqueId + ".mappedFields.name",
                                     name: "oauth2.mappedFields.name",
-                                    placeholder: "Select field",
+                                    placeholder: "فیلد را انتخاب کنید",
                                     options: () => data.regularFieldOptions,
                                     value: () => collection.oauth2.mappedFields.name,
                                     onchange: (selectedOpts) => {
@@ -265,7 +265,7 @@ export function oauth2Accordion(collection) {
                                 app.components.select({
                                     id: uniqueId + ".mappedFields.avatarURL",
                                     name: "oauth2.mappedFields.avatarURL",
-                                    placeholder: "Select field",
+                                    placeholder: "فیلد را انتخاب کنید",
                                     options: () => data.regularAndFileFieldOptions,
                                     value: () => collection.oauth2.mappedFields.avatarURL,
                                     onchange: (selectedOpts) => {
@@ -282,7 +282,7 @@ export function oauth2Accordion(collection) {
                                 app.components.select({
                                     id: uniqueId + ".mappedFields.id",
                                     name: "oauth2.mappedFields.id",
-                                    placeholder: "Select field",
+                                    placeholder: "فیلد را انتخاب کنید",
                                     options: () => data.regularFieldOptions,
                                     value: () => collection.oauth2.mappedFields.id,
                                     onchange: (selectedOpts) => {
@@ -299,7 +299,7 @@ export function oauth2Accordion(collection) {
                                 app.components.select({
                                     id: uniqueId + ".mappedFields.username",
                                     name: "oauth2.mappedFields.username",
-                                    placeholder: "Select field",
+                                    placeholder: "فیلد را انتخاب کنید",
                                     options: () => data.regularFieldOptions,
                                     value: () => collection.oauth2.mappedFields.username,
                                     onchange: (selectedOpts) => {

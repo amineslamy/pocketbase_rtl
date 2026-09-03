@@ -125,7 +125,7 @@ export function pageLogs(route) {
                     app.components.searchbar({
                         className: "logs-searchbar",
                         historyKey: "pbLogsSearchHistory",
-                        placeholder: "Search term or filter like `level > 0`",
+                        placeholder: "عبارت جستجو یا فیلتر مانند: `level > 0`",
                         value: () => logsSettings.filter || "",
                         onsubmit: (val) => logsSettings.filter = val,
                         autocomplete: [

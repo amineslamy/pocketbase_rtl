@@ -9,8 +9,8 @@ export function settings(props) {
     const uniqueId = "f_" + app.utils.randomString();
 
     const isMultipleOptions = [
-        { label: "Single", value: false },
-        { label: "Multiple", value: true },
+        { label: "تکی", value: false },
+        { label: "چندگانه", value: true },
     ];
 
     const optionsDropdown = t.div(
@@ -77,7 +77,7 @@ export function settings(props) {
                 },
                 t.input({
                     type: "text",
-                    placeholder: "Add choices*",
+                    placeholder: "اضافه کردن انتخاب ها*",
                     className: "txt-left inline-error",
                     value: () => props.field.values?.join(" • ") || "",
                     name: () => `fields.${props.fieldIndex}.values`,
@@ -120,7 +120,7 @@ export function settings(props) {
                         t.input({
                             type: "number",
                             id: uniqueId + ".maxSelect",
-                            placeholder: "Default to single",
+                            placeholder: "پیش فرض روی تکی",
                             step: 1,
                             min: 2,
                             max: () => props.field.values?.length || 2,
@@ -165,7 +165,7 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".required" },
-                    t.span({ className: "txt" }, "Required"),
+                    t.span({ className: "txt" }, "ضروری"),
                     t.small({ className: "txt-hint" }, () => props.field.maxSelect > 1 ? "(!=[])" : "(!='')"),
                     t.i({
                         className: "ri-information-line link-hint",

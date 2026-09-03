@@ -89,26 +89,26 @@ function backupRestoreModal(key) {
                             { className: "content" },
                             t.p(
                                 { className: "txt-bold" },
-                                "Please proceed with extreme caution and use it only with trusted backups!",
+                                "لطفاً با احتیاط شدید عمل کنید و فقط با پشتیبان‌های معتبر از آن استفاده کنید!",
                             ),
-                            t.p(null, "Backup restore currently works only on UNIX based systems."),
+                            t.p(null, "بازیابی نسخه پشتیبان در حال حاضر فقط در سیستم‌های مبتنی بر یونیکس کار می‌کند."),
                             t.p(
                                 null,
-                                "The restore operation will attempt to replace your existing ",
+                                "عملیات بازیابی تلاش خواهد کرد تا فایل موجود شما را جایگزین کند. ",
                                 t.code(null, "pb_data"),
-                                " with the one from the backup and will restart the application process.",
+                                " با نسخه پشتیبان تهیه شده و فرآیند درخواست را مجدداً راه اندازی می کند.",
                             ),
                             t.p(
                                 null,
-                                "This means that on success all of your data (including app settings, users, superusers, etc.) will be replaced with the ones from the backup.",
+                                "این بدان معناست که در صورت موفقیت، تمام داده‌های شما (از جمله تنظیمات برنامه، کاربران، کاربران ارشد و غیره) با داده‌های موجود در نسخه پشتیبان جایگزین می‌شوند.",
                             ),
                             t.p(
                                 null,
-                                "The operation will be reverted if the backup is invalid (ex. missing ",
+                                "عملیات بازیابی اگر پشتیبان نامعتبر باشد (مثلاً فایل ",
                                 t.code(null, "data.db"),
-                                " file).",
+                                " گمشده) لغو خواهد شد.",
                             ),
-                            t.p(null, "Below is an oversimplified version of the restore flow:"),
+                            t.p(null, "در ادامه نسخه ساده شده جریان بازیابی آورده شده است:"),
                             t.ol(
                                 null,
                                 t.li(

@@ -81,11 +81,11 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".required" },
-                    t.span({ className: "txt" }, "Required"),
+                    t.span({ className: "txt" }, "ضروری"),
                     t.small({ className: "txt-hint" }, "(!=0)"),
                     t.i({
                         className: "ri-information-line link-hint",
-                        ariaDescription: app.attrs.tooltip("Requires the field value to be not 0."),
+                        ariaDescription: app.attrs.tooltip("لازم است مقدار فیلد 0 نباشد."),
                     }),
                 ),
             ),
@@ -101,10 +101,10 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".onlyInt" },
-                    t.span({ className: "txt" }, "No decimals"),
+                    t.span({ className: "txt" }, "بدون اعشار"),
                     t.i({
                         className: "ri-information-line link-hint",
-                        ariaDescription: app.attrs.tooltip("Existing decimal numbers will not be affected."),
+                        ariaDescription: app.attrs.tooltip("اعداد اعشاری موجود تأثیر نخواهند داشت."),
                     }),
                 ),
             ),

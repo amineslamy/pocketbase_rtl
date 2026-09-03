@@ -109,7 +109,7 @@ export function batchAccordion(pageData) {
                         type: "number",
                         min: 0,
                         step: 1,
-                        placeholder: "Default to 128MB",
+                        placeholder: "پیش فرض:  128MB",
                         disabled: () => !pageData.formSettings.batch.enabled,
                         value: () => pageData.formSettings.batch.maxBodySize || "",
                         oninput: (e) => pageData.formSettings.batch.maxBodySize = parseInt(e.target.value, 10),

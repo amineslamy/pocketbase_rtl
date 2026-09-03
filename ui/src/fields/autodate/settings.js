@@ -11,9 +11,9 @@ export function settings(props) {
     const ON_CREATE_UPDATE = 3;
 
     const options = [
-        { label: "Create", value: ON_CREATE },
-        { label: "Update", value: ON_UPDATE },
-        { label: "Create/Update", value: ON_CREATE_UPDATE },
+        { label: "ایجاد", value: ON_CREATE },
+        { label: "به‌روزرسانی", value: ON_UPDATE },
+        { label: "ایجاد/به‌روزرسانی", value: ON_CREATE_UPDATE },
     ];
 
     function getOptionFromField(field) {
@@ -53,7 +53,7 @@ export function settings(props) {
         header: t.div(
             {
                 className: "field header-select autodate-select",
-                ariaDescription: app.attrs.tooltip("Auto set on", "left"),
+                ariaDescription: app.attrs.tooltip("تنظیم خودکار روشن", "left"),
                 onmount: () => {
                     // init default value
                     updateField(getOptionFromField(props.field));

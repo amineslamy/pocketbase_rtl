@@ -368,7 +368,7 @@ export function rateLimitAccordion(pageData) {
                                                     t.input({
                                                         type: "number",
                                                         required: true,
-                                                        placeholder: "Max requests*",
+                                                        placeholder: "حداکثر درخواست ها*",
                                                         className: "inline-error",
                                                         min: 1,
                                                         step: 1,
@@ -385,7 +385,7 @@ export function rateLimitAccordion(pageData) {
                                                     t.input({
                                                         type: "number",
                                                         required: true,
-                                                        placeholder: "Interval*",
+                                                        placeholder: "فاصله*",
                                                         className: "inline-error",
                                                         min: 1,
                                                         step: 1,

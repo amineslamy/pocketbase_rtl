@@ -327,7 +327,7 @@ export function pageMailSettings(route) {
                                                     id: "smtp.localName",
                                                     name: "smtp.localName",
                                                     type: "text",
-                                                    placeholder: "Default to localhost",
+                                                    placeholder: "پیش فرض: localhost",
                                                     value: () => data.formSettings.smtp.localName || "",
                                                     oninput: (e) => data.formSettings.smtp.localName = e.target.value,
                                                 }),

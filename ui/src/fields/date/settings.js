@@ -74,7 +74,7 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".required" },
-                    t.span({ className: "txt" }, "Required"),
+                    t.span({ className: "txt" }, "ضروری"),
                     t.small({ className: "txt-hint" }, "(!='')"),
                     t.i({
                         className: "ri-information-line link-hint",

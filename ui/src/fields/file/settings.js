@@ -9,8 +9,8 @@ export function settings(props) {
     const uniqueId = "f_" + app.utils.randomString();
 
     const isMultipleOptions = [
-        { label: "Single", value: false },
-        { label: "Multiple", value: true },
+        { label: "تکی", value: false },
+        { label: "چندگانه", value: true },
     ];
 
     return app.components.fieldSettings(props, {
@@ -46,7 +46,7 @@ export function settings(props) {
                         { className: "field" },
                         t.label(
                             { htmlFor: uniqueId + ".mimeTypes" },
-                            t.span({ className: "txt" }, "Allowed mime types"),
+                            t.span({ className: "txt" }, "انواع MIME مجاز"),
                             t.i({
                                 className: "ri-information-line link-hint",
                                 ariaDescription: app.attrs.tooltip(
@@ -56,7 +56,7 @@ export function settings(props) {
                         ),
                         app.components.select({
                             max: 99,
-                            placeholder: "No restriction",
+                            placeholder: "بدون محدودیت",
                             options: app.utils.mimeTypes.map((opt) => {
                                 return {
                                     value: opt.mimeType,
@@ -81,7 +81,7 @@ export function settings(props) {
                                 "className": "link-hint gap-0",
                                 "html-popovertarget": uniqueId + "mimeTypesDropdown",
                             },
-                            t.span({ className: "txt" }, "Choose presets"),
+                            t.span({ className: "txt" }, "انتخاب تنظیمات از پیش تعیین‌شده"),
                             t.i({ className: "ri-arrow-drop-down-fill", ariaHidden: true }),
                         ),
                         t.div(
@@ -167,11 +167,11 @@ export function settings(props) {
                             {
                                 htmlFor: uniqueId + ".thumbs",
                             },
-                            t.span({ className: "txt" }, "Thumb sizes"),
+                            t.span({ className: "txt" }, "اندازه‌های کوچک تصویر"),
                             t.i({
                                 className: "ri-information-line link-hint",
                                 ariaDescription: app.attrs.tooltip(
-                                    "List of additional thumb sizes for image files, along with the default thumb size of 100x100. The thumbs are generated lazily on first access.",
+                                    "لیست اندازه‌های کوچک اضافی برای فایل‌های تصویری, همراه با اندازه کوچک پیش‌فرض 100x100. تصاویر کوچک به صورت تنبل در اولین دسترسی تولید می‌شوند.",
                                 ),
                             }),
                         ),
@@ -186,14 +186,14 @@ export function settings(props) {
                     ),
                     t.div(
                         { className: "field-help" },
-                        t.span({ className: "txt m-r-5" }, "Use comma as separator."),
+                        t.span({ className: "txt m-r-5" }, "از کاما به عنوان جداکننده استفاده کنید."),
                         t.button(
                             {
                                 "type": "button",
                                 "className": "link-hint gap-0",
                                 "html-popovertarget": uniqueId + "thumbFormatsDropdown",
                             },
-                            t.span({ className: "txt" }, "Supported formats"),
+                            t.span({ className: "txt" }, "انواع پشتیبانی‌شده"),
                             t.i({ className: "ri-arrow-drop-down-fill", ariaHidden: true }),
                         ),
                         t.div(
@@ -249,7 +249,7 @@ export function settings(props) {
                             step: 1,
                             min: 0,
                             max: Number.MAX_SAFE_INTEGER,
-                            placeholder: "~5MB default",
+                            placeholder: "پیش فرض حدود 5 مگ",
                             name: () => `fields.${props.fieldIndex}.maxSize`,
                             value: () => props.field.maxSize || "",
                             oninput: (e) => {
@@ -277,7 +277,7 @@ export function settings(props) {
                         t.input({
                             type: "number",
                             id: uniqueId + ".maxSelect",
-                            placeholder: "Default to single",
+                            placeholder: "پیش فرض روی یک",
                             step: 1,
                             min: 2,
                             required: true,
@@ -309,10 +309,10 @@ export function settings(props) {
                         }),
                         t.label(
                             { htmlFor: uniqueId + ".protected" },
-                            t.span({ className: "txt" }, "Protected"),
+                            t.span({ className: "txt" }, "محافظت شده"),
                             t.small(
                                 { className: "txt-hint" },
-                                "File download requests will need to satisfy the View API rule (",
+                                "درخواست‌های دانلود فایل باید شرایط قوانین View API را برآورده کنند (",
                                 t.a({
                                     href: import.meta.env.PB_PROTECTED_FILE_DOCS,
                                     target: "_blank",
@@ -352,7 +352,7 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".required" },
-                    t.span({ className: "txt" }, "Required"),
+                    t.span({ className: "txt" }, "ضروری"),
                     t.small({ className: "txt-hint" }, () => props.field.maxSelect > 1 ? "(!=[])" : "(!='')"),
                     t.i({
                         className: "ri-information-line link-hint",

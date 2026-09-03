@@ -227,7 +227,7 @@ function logsSettingsModal(modalSettings) {
                                     name: "logs.maxDataSize",
                                     min: 0,
                                     max: Number.MAX_SAFE_INTEGER,
-                                    placeholder: "Default to ~16KB",
+                                    placeholder: "پیش فرض: ~16KB",
                                     value: () => data.formSettings.logs.maxDataSize || "",
                                     oninput: (e) => {
                                         if (e.target.value <= 0) {

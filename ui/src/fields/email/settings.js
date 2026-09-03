@@ -18,7 +18,7 @@ export function settings(props) {
                         { className: "field" },
                         t.label(
                             { htmlFor: uniqueId + ".exceptDomains" },
-                            t.span({ className: "txt" }, "Except domains"),
+                            t.span({ className: "txt" }, "به جز دامنه ها"),
                             t.i({
                                 className: "ri-information-line link-hint",
                                 ariaDescription: app.attrs.tooltip(
@@ -45,7 +45,7 @@ export function settings(props) {
                         { className: "field" },
                         t.label(
                             { htmlFor: uniqueId + ".onlyDomains" },
-                            t.span({ className: "txt" }, "Only domains"),
+                            t.span({ className: "txt" }, "فقط دامنه ها"),
                             t.i({
                                 className: "ri-information-line link-hint",
                                 ariaDescription: app.attrs.tooltip(
@@ -92,7 +92,7 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".required" },
-                    t.span({ className: "txt" }, "Required"),
+                    t.span({ className: "txt" }, "ضروری"),
                     t.small({ className: "txt-hint" }, "(!='')"),
                     t.i({
                         className: "ri-information-line link-hint",

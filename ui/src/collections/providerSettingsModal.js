@@ -182,7 +182,7 @@ function providerSettingsModal(providerConfig, settings) {
                     className: "btn transparent m-r-auto",
                     onclick: () => app.modals.close(modal),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             t.button(
                 {
@@ -191,7 +191,7 @@ function providerSettingsModal(providerConfig, settings) {
                     className: "btn",
                     disabled: () => !data.hasChanges,
                 },
-                t.span({ className: "txt" }, "Set provider config"),
+                t.span({ className: "txt" }, "پیکربندی ارائه دهنده را تنظیم کنید"),
             ),
         ),
     );

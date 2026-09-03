@@ -173,7 +173,7 @@ window.app.oauth2.oidc = function(providerInfo, namePrefix, data) {
                                 { className: "field" },
                                 t.label(
                                     { htmlFor: uniqueId + ".extra.issuers" },
-                                    t.span({ className: "txt" }, "Issuers"),
+                                    t.span({ className: "txt" }, "صادرکنندگان معتبر "),
                                     t.i({
                                         className: "ri-information-line link-hint",
                                         ariaDescription: app.attrs.tooltip(

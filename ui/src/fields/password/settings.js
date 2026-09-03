@@ -20,7 +20,7 @@ export function settings(props) {
                     { className: "field" },
                     t.label(
                         { htmlFor: uniqueId + ".min" },
-                        t.span({ className: "txt" }, "Min length"),
+                        t.span({ className: "txt" }, "حداقل طول"),
                         t.i({
                             className: "ri-information-line link-hint",
                             ariaDescription: app.attrs.tooltip("Clear the field or set it to 0 for no limit."),
@@ -33,7 +33,7 @@ export function settings(props) {
                         step: 1,
                         min: 0,
                         max: 71,
-                        placeholder: "No min limit",
+                        placeholder: "بدون محدودیت حداقل",
                         value: () => props.field.min || "",
                         oninput: (e) => {
                             // temp skip invalid numbers with leading 0 while typing to avoid reseting the entire input
@@ -57,7 +57,7 @@ export function settings(props) {
                     { className: "field" },
                     t.label(
                         { htmlFor: uniqueId + ".max" },
-                        t.span({ className: "txt" }, "Max length"),
+                        t.span({ className: "txt" }, "حداکثر طول"),
                         t.i({
                             className: "ri-information-line link-hint",
                             ariaDescription: app.attrs.tooltip(
@@ -72,7 +72,7 @@ export function settings(props) {
                         step: 1,
                         min: () => props.field.min || 0,
                         max: 71,
-                        placeholder: "Up to 71 chars",
+                        placeholder: "تا 71 کاراکتر",
                         value: () => props.field.max || "",
                         oninput: (e) => {
                             // temp skip invalid numbers with leading 0 while typing to avoid reseting the entire input
@@ -96,7 +96,7 @@ export function settings(props) {
                     { className: "field" },
                     t.label(
                         { htmlFor: uniqueId + ".max" },
-                        t.span({ className: "txt" }, "Bcrypt cost"),
+                        t.span({ className: "txt" }, "هزینه هش (bcrypt cost)"),
                         t.i({
                             className: "ri-information-line link-hint",
                             ariaDescription: app.attrs.tooltip(
@@ -112,7 +112,7 @@ export function settings(props) {
                         // https://pkg.go.dev/golang.org/x/crypto/bcrypt#pkg-constants
                         min: 4,
                         max: 31,
-                        placeholder: "Default to 10",
+                        placeholder: "پیش‌فرض به 10",
                         value: () => props.field.cost || "",
                         oninput: (e) => {
                             // temp skip invalid numbers with leading 0 while typing to avoid reseting the entire input
@@ -136,7 +136,7 @@ export function settings(props) {
                     { className: "field" },
                     t.label(
                         { htmlFor: uniqueId + ".pattern" },
-                        t.span({ className: "txt" }, "Validation pattern"),
+                        t.span({ className: "txt" }, "الگوی اعتبارسنجی"),
                     ),
                     t.input({
                         type: "text",
@@ -182,7 +182,7 @@ export function settings(props) {
                     }),
                     t.label(
                         { htmlFor: uniqueId + ".required" },
-                        t.span({ className: "txt" }, "Required"),
+                        t.span({ className: "txt" }, "ضروری"),
                         t.small({ className: "txt-hint" }, "(!='')"),
                         t.i({
                             className: "ri-information-line link-hint",

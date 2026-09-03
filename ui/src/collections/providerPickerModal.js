@@ -74,7 +74,7 @@ function providerPickerModal(settings = {}) {
                         t.div(
                             { className: "field" },
                             t.input({
-                                placeholder: "Search...",
+                                placeholder: "جستجو....",
                                 className: "p-l-20",
                                 value: () => data.searchTerm,
                                 oninput: (e) => data.searchTerm = e.target.value,

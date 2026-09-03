@@ -14,8 +14,8 @@ export function settings(props) {
     ];
 
     const isMultipleOptions = [
-        { label: "Single", value: false },
-        { label: "Multiple", value: true },
+        { label: "تکی", value: false },
+        { label: "چندگانه", value: true },
     ];
 
     const watchers = [
@@ -43,7 +43,7 @@ export function settings(props) {
                 app.components.select({
                     required: true,
                     className: "inline-error",
-                    placeholder: "Select collection*",
+                    placeholder: "انتخاب جدول*",
                     name: () => `fields.${props.fieldIndex}.collectionId`,
                     disabled: () => !!props.originalField?.id,
                     options: () =>
@@ -72,7 +72,7 @@ export function settings(props) {
                                     },
                                 },
                                 t.i({ className: "ri-add-line", ariaHidden: true }),
-                                t.span({ className: "txt" }, "New collection"),
+                                t.span({ className: "txt" }, "جدول جدید"),
                             ),
                         ];
                     },
@@ -114,7 +114,7 @@ export function settings(props) {
                             step: 1,
                             min: 0,
                             max: Number.MAX_SAFE_INTEGER,
-                            placeholder: "No min limit",
+                            placeholder: "بدون محدودیت حداقل",
                             name: () => `fields.${props.fieldIndex}.minSelect`,
                             value: () => props.field.minSelect || "",
                             onchange: (e) => (props.field.minSelect = parseInt(e.target.value, 10)),
@@ -132,7 +132,7 @@ export function settings(props) {
                             step: 1,
                             min: () => props.field.minSelect || 2,
                             max: Number.MAX_SAFE_INTEGER,
-                            placeholder: "Default to single",
+                            placeholder: "پیش‌فرض به تک",
                             name: () => `fields.${props.fieldIndex}.maxSelect`,
                             value: () => props.field.maxSelect || "",
                             onchange: (e) => {
@@ -191,7 +191,7 @@ export function settings(props) {
                 }),
                 t.label(
                     { htmlFor: uniqueId + ".required" },
-                    t.span({ className: "txt" }, "Required"),
+                    t.span({ className: "txt" }, "ضروری"),
                     t.small({ className: "txt-hint" }, () => props.field.maxSelect > 1 ? "(!=[])" : "(!='')"),
                     t.i({
                         className: "ri-information-line link-hint",
