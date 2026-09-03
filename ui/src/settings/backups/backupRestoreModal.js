@@ -165,7 +165,7 @@ function backupRestoreModal(key) {
                     onclick: () => app.modals.close(),
                     disabled: () => data.isSubmitting,
                 },
-                t.span({ className: "txt" }, "Cancel"),
+                t.span({ className: "txt" }, "لغو"),
             ),
             t.button(
                 {

@@ -205,7 +205,7 @@ function appleSecretGeneratorModal(modalSettings = {}) {
                     ),
                     t.div(
                         { className: "field-help" },
-                        "The key is not stored on the server and it is used only for generating the signed JWT.",
+                        "این کلید روی سرور ذخیره نمی‌شود و فقط برای تولید جی دبلیو تی امضا شده استفاده می‌شود.",
                     ),
                 ),
             ),

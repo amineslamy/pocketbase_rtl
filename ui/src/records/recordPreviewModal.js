@@ -216,7 +216,7 @@ function recordPreviewModal(rawRecord, modalSettings) {
                     className: "btn transparent m-r-auto",
                     onclick: () => app.modals.close(modal),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             t.button(
                 {

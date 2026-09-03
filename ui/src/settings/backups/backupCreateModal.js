@@ -133,7 +133,7 @@ function backupCreateModal(settings) {
                     disabled: () => data.isSubmitting,
                     onclick: () => app.modals.close(modal),
                 },
-                t.span({ className: "txt" }, "Cancel"),
+                t.span({ className: "txt" }, "لغو"),
             ),
             t.button(
                 {
@@ -142,7 +142,7 @@ function backupCreateModal(settings) {
                     className: () => `btn ${data.isSubmitting ? "loading" : ""}`,
                     disabled: () => data.isSubmitting,
                 },
-                t.span({ className: "txt" }, "Start backup"),
+                t.span({ className: "txt" }, "شروع پشتیبان گیری"),
             ),
         ),
     );

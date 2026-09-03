@@ -40,7 +40,7 @@ window.app.components.select = function(propsArg = {}) {
         searchThreshold: 6,
         required: false,
         disabled: false,
-        placeholder: "- Select -",
+        placeholder: "- انتخاب -",
         noItemsFoundText: "No items found",
         onchange: function(selectedOpts) {},
         ondropdowntoggle: function(e) {},
@@ -139,7 +139,7 @@ window.app.components.select = function(propsArg = {}) {
 
     const searchInput = t.input({
         type: "text",
-        placeholder: "Search...",
+        placeholder: "جستجو...",
         value: () => internalData.search,
         oninput: (e) => (internalData.search = e.target.value),
     });

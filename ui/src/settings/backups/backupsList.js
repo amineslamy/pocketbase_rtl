@@ -220,7 +220,7 @@ export function backupsList(propsArg = {}) {
 
                     return [
                         t.span({ className: "loader sm" }),
-                        t.span({ className: "txt" }, "Backup/restore operation is in process"),
+                        t.span({ className: "txt" }, "عملیات پشتیبان‌گیری/بازیابی در حال انجام است"),
                     ];
                 },
             ),

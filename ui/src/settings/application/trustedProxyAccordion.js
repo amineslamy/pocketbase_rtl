@@ -189,7 +189,7 @@ export function trustedProxyAccordion(pageData) {
                                     pageData.formSettings.trustedProxy.headers = [];
                                 },
                             },
-                            t.span({ className: "txt" }, "Clear"),
+                            t.span({ className: "txt" }, "پاک کردن"),
                         ),
                     ),
                 ),

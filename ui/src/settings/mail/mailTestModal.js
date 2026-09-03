@@ -186,7 +186,7 @@ function mailTestModal(preselectedCollectionIdOrName = "", template = "") {
                     onclick: () => app.modals.close(),
                     disabled: () => data.isSending,
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             t.button(
                 {
@@ -196,7 +196,7 @@ function mailTestModal(preselectedCollectionIdOrName = "", template = "") {
                     disabled: () => data.isSending || !data.canSubmit,
                 },
                 t.i({ className: "ri-mail-send-line", ariaHidden: true }),
-                t.span({ className: "txt" }, "Send"),
+                t.span({ className: "txt" }, "ارسال"),
             ),
         ),
     );

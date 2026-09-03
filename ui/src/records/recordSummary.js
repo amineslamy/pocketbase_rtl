@@ -174,7 +174,7 @@ const showRecordSummaryDropdownNoDelay = function(target, record) {
                             e.stopImmediatePropagation();
                         },
                     },
-                    t.span({ className: "txt" }, "Edit relation record"),
+                    t.span({ className: "txt" }, "ویرایش رکورد رابطه"),
                     t.i({ className: "ri-external-link-line", ariaHidden: true }),
                 ),
                 t.button(

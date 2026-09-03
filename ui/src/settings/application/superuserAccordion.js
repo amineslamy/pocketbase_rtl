@@ -129,7 +129,7 @@ export function superuserAccordion(pageData) {
                             }
                         },
                     },
-                    t.span({ className: "txt" }, "Clear"),
+                    t.span({ className: "txt" }, "پاک کردن"),
                 ),
             ),
         ),

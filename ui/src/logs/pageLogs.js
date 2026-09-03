@@ -155,7 +155,7 @@ export function pageLogs(route) {
                             }),
                             t.label(
                                 { htmlFor: "logs_checkbox" },
-                                t.small({ className: "txt" }, "Include requests by superusers"),
+                                t.small({ className: "txt" }, "درخواست‌های کاربران ارشد را نیز لحاظ کنید"),
                             ),
                         ),
                     ),

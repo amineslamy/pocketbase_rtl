@@ -162,7 +162,7 @@ function importCollectionsModal(oldCollections, newCollections, settingsArg) {
                     disabled: () => data.isImporting,
                     onclick: () => app.modals.close(modal),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             t.button(
                 {
@@ -171,7 +171,7 @@ function importCollectionsModal(oldCollections, newCollections, settingsArg) {
                     disabled: () => data.isImporting,
                     onclick: () => submitConfirm(),
                 },
-                t.span({ className: "txt" }, "Confirm and import"),
+                t.span({ className: "txt" }, "پذیرش تغییرات و وارد کردن"),
             ),
         ),
     );

@@ -212,7 +212,7 @@ function logsSettingsModal(modalSettings) {
                                 { className: "field" },
                                 t.label(
                                     { htmlFor: "logs.maxDataSize" },
-                                    t.span({ className: "txt" }, "Max data size"),
+                                    t.span({ className: "txt" }, "حداکثر اندازه داده لاگ"),
                                     t.small(null, "(bytes)"),
                                     t.i({
                                         className: "ri-information-line link-hint",
@@ -287,7 +287,7 @@ function logsSettingsModal(modalSettings) {
                             onclick: () => app.modals.close(modal),
                             disabled: () => data.isSaving,
                         },
-                        t.span({ className: "txt" }, "Close"),
+                        t.span({ className: "txt" }, "بستن"),
                     ),
                     t.button(
                         {

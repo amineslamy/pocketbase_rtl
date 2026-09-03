@@ -472,7 +472,7 @@ export function rateLimitAccordion(pageData) {
                                 { className: "field" },
                                 t.label(
                                     { htmlFor: "excludedIPs" },
-                                    t.span({ className: "txt" }, "Excluded IPs and subnets"),
+                                    t.span({ className: "txt" }, " آی پی ها و زیرشبکه های مستثنا"),
                                 ),
                                 t.input({
                                     id: "excludedIPs",
@@ -512,7 +512,7 @@ export function rateLimitAccordion(pageData) {
                                             }
                                         },
                                     },
-                                    t.span({ className: "txt" }, "Clear"),
+                                    t.span({ className: "txt" }, "پاک کردن"),
                                 ),
                             ),
                         ),

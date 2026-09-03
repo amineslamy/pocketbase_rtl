@@ -177,7 +177,7 @@ function recordImpersonateModal(record) {
                     disabled: () => data.isLoading,
                     onclick: () => app.modals.close(),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             t.button(
                 {
@@ -187,7 +187,7 @@ function recordImpersonateModal(record) {
                     "className": () => `btn expanded-lg ${data.isLoading ? "loading" : ""}`,
                     "disabled": () => data.isLoading,
                 },
-                t.span({ className: "txt" }, "Generate token"),
+                t.span({ className: "txt" }, "تولید توکن"),
             ),
             t.button(
                 {
@@ -196,7 +196,7 @@ function recordImpersonateModal(record) {
                     className: () => `btn secondary expanded-lg ${data.isLoading ? "loading" : ""}`,
                     onclick: () => reset(),
                 },
-                t.span({ className: "txt" }, "Generate new one"),
+                t.span({ className: "txt" }, "تولید یکی جدید"),
             ),
         ),
     );

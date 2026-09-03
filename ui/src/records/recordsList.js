@@ -532,7 +532,7 @@ window.app.components.recordsList = function(propsArg = {}) {
                                             },
                                         },
                                         t.i({ className: "ri-add-line" }),
-                                        t.span({ className: "txt" }, "New record"),
+                                        t.span({ className: "txt" }, "رکورد جدید"),
                                     ),
                                     t.button(
                                         {
@@ -544,7 +544,7 @@ window.app.components.recordsList = function(propsArg = {}) {
                                                 triggerOnchange();
                                             },
                                         },
-                                        t.span({ className: "txt" }, "Clear search"),
+                                        t.span({ className: "txt" }, "پاک کردن جستجو"),
                                     ),
                                 );
                             }),
@@ -698,7 +698,7 @@ window.app.components.recordsList = function(propsArg = {}) {
                                 disabled: () => data.isLoading,
                                 onclick: () => loadRecords(),
                             },
-                            t.span({ className: "txt" }, "Load more"),
+                            t.span({ className: "txt" }, "لود بیشتر"),
                         ),
                     ),
                 ),

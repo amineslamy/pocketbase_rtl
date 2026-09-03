@@ -167,7 +167,7 @@ export function pageStorageSettings() {
                                         className: "btn transparent secondary",
                                         onclick: reset,
                                     },
-                                    t.span({ className: "txt" }, "Cancel"),
+                                    t.span({ className: "txt" }, "لغو"),
                                 ),
                                 t.button(
                                     {

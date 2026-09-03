@@ -177,7 +177,7 @@ export function backupsForm(propsArg = {}) {
                                                         className: "btn outline sm",
                                                         "html-popovertarget": "cron-presets-dropdown",
                                                     },
-                                                    t.span({ className: "txt" }, "Presets"),
+                                                    t.span({ className: "txt" }, "از پیش تنظیم شده ها"),
                                                     t.i({ className: "ri-arrow-drop-down-line", ariaHidden: true }),
                                                 ),
                                                 t.div(
@@ -269,7 +269,7 @@ export function backupsForm(propsArg = {}) {
                                         className: "btn transparent secondary",
                                         onclick: reset,
                                     },
-                                    t.span({ className: "txt" }, "Cancel"),
+                                    t.span({ className: "txt" }, "لغو"),
                                 ),
                                 t.button(
                                     {

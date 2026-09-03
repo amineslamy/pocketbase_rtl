@@ -319,7 +319,7 @@ export function logsList(logsSettings) {
                                                     logsSettings.zoom = {};
                                                 },
                                             },
-                                            t.span({ className: "txt" }, "Reset zoom"),
+                                            t.span({ className: "txt" }, "ریست زوم"),
                                         ),
                                         t.button(
                                             {
@@ -330,7 +330,7 @@ export function logsList(logsSettings) {
                                                     logsSettings.filter = "";
                                                 },
                                             },
-                                            t.span({ className: "txt" }, "Clear search"),
+                                            t.span({ className: "txt" }, "پاک کردن جستجو"),
                                         ),
                                     );
                                 },
@@ -475,7 +475,7 @@ export function logsList(logsSettings) {
                                 disabled: () => logsSettings.isListLoading,
                                 onclick: () => load(),
                             },
-                            t.span({ className: "txt" }, "Load older"),
+                            t.span({ className: "txt" }, "لود لاگ‌های قدیمی"),
                         ),
                     ),
                 ),
@@ -500,7 +500,7 @@ export function logsList(logsSettings) {
                         className: "btn sm secondary pill m-r-auto",
                         onclick: () => selectAll(false),
                     },
-                    t.span({ className: "txt" }, "Reset"),
+                    t.span({ className: "txt" }, "ریست"),
                 ),
                 t.button(
                     {

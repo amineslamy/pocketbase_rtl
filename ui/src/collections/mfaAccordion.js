@@ -116,7 +116,7 @@ export function mfaAccordion(collection) {
                     id: uniqueId + ".rule",
                     name: "mfa.rule",
                     nullable: false,
-                    placeholder: "Leave empty to require MFA for everyone",
+                    placeholder: "برای الزام ام اف ای برای همه، خالی بگذارید",
                     autocomplete: (word) => {
                         return app.utils.collectionAutocompleteKeys(collection, word);
                     },
@@ -125,14 +125,17 @@ export function mfaAccordion(collection) {
                 }),
                 t.div(
                     { className: "field-help" },
-                    t.p(null, "This optional rule could be used to enable/disable MFA per account basis."),
                     t.p(
                         null,
-                        "For example, to require MFA only for accounts with non-empty email you can set it to ",
+                        "این قانون اختیاری می‌تواند برای فعال/غیرفعال کردن ام اف ای برای هر حساب کاربری استفاده شود.",
+                    ),
+                    t.p(
+                        null,
+                        "برای مثال، برای اینکه ام اف ای فقط برای حساب‌هایی با ایمیل غیر خالی الزامی باشد، می‌توانید آن را روی",
                         t.code(null, "email != ''"),
                         ".",
                     ),
-                    t.p(null, "Leave the rule empty to require MFA for everyone."),
+                    t.p(null, "برای الزام ام اف ای برای همه، خالی بگذارید."),
                 ),
             ),
         ),

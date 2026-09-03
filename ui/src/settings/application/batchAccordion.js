@@ -41,7 +41,7 @@ export function batchAccordion(pageData) {
                     }),
                     t.label(
                         { htmlFor: "batch.enabled" },
-                        t.span({ className: "txt" }, "Enable"),
+                        t.span({ className: "txt" }, "فعال کردن"),
                         t.small({ className: "txt-hint" }, " (experimental)"),
                     ),
                 ),

@@ -347,7 +347,7 @@ function recordFilePickerModal(settings = defaultSettings) {
                         disabled: () => data.isLoadingRecords,
                         onclick: () => loadRecords(),
                     },
-                    t.span({ className: "txt" }, "Load more"),
+                    t.span({ className: "txt" }, "لود بیشتر"),
                 ),
             ),
             // no files
@@ -381,7 +381,7 @@ function recordFilePickerModal(settings = defaultSettings) {
                     className: "btn transparent m-r-auto",
                     onclick: () => app.modals.close(modal),
                 },
-                t.span({ className: "txt" }, "Close"),
+                t.span({ className: "txt" }, "بستن"),
             ),
             // image thumb selector
             () => {

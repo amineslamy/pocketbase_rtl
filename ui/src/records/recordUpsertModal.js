@@ -1407,7 +1407,10 @@ function authProvidersTab(collection, data) {
                     if (!local.externalAuths.length) {
                         return t.div(
                             { className: "list-item" },
-                            t.div({ className: "block txt-hint txt-center" }, "هیچ ارائه‌دهنده‌ی احراز هویت خارجی یافت نشد."),
+                            t.div(
+                                { className: "block txt-hint txt-center" },
+                                "هیچ ارائه‌دهنده‌ی احراز هویت خارجی یافت نشد.",
+                            ),
                         );
                     }
 

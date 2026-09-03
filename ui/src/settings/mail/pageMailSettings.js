@@ -263,7 +263,10 @@ export function pageMailSettings(route) {
                                     },
                                     t.span(
                                         { className: "txt" },
-                                        () => data.showMoreOptions ? "پنهان کردن گزینه های بیشتر" : "نمایش گزینه های بیشتر",
+                                        () =>
+                                            data.showMoreOptions
+                                                ? "پنهان کردن گزینه های بیشتر"
+                                                : "نمایش گزینه های بیشتر",
                                     ),
                                     t.i({
                                         className: () =>
@@ -352,7 +355,7 @@ export function pageMailSettings(route) {
                                                     className: "btn transparent secondary",
                                                     onclick: reset,
                                                 },
-                                                t.span({ className: "txt" }, "Cancel"),
+                                                t.span({ className: "txt" }, "لغو"),
                                             ),
                                             t.button(
                                                 {

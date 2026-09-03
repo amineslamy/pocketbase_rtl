@@ -516,7 +516,7 @@ export function pageImportCollections(route) {
                                     className: () => `btn secondary ${!data.rawNewCollections ? "hidden" : ""}`,
                                     onclick: clear,
                                 },
-                                t.span({ className: "txt" }, "Clear"),
+                                t.span({ className: "txt" }, "پاک کردن"),
                             ),
                             t.button(
                                 {
@@ -525,7 +525,7 @@ export function pageImportCollections(route) {
                                     disabled: () => !data.canReview,
                                     onclick: review,
                                 },
-                                t.span({ className: "txt" }, "Review"),
+                                t.span({ className: "txt" }, "مرور تغییرات"),
                             ),
                         ),
                     ),
