@@ -18,7 +18,7 @@ export function settings(props) {
             popover: "manual",
             className: "dropdown field-select-choices-dropdown",
         },
-        t.div({ className: "field-help m-t-0", style: "font-size: 0.9em" }, "New-line separated choices:"),
+        t.div({ className: "field-help m-t-0", style: "font-size: 0.9em" }, "هر گزینه را در یک خط جداگانه وارد کنید."),
         t.div(
             { className: "field" },
             t.textarea({

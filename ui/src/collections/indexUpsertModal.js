@@ -165,7 +165,7 @@ function indexUpsertModal(collection, index = "", settings = {}) {
             { className: "modal-header" },
             t.h6(
                 { className: "modal-title" },
-                t.span({ className: "txt" }, () => (data.isNew ? "Create index" : "Update index")),
+                t.span({ className: "txt" }, () => (data.isNew ? "ایجاد شاخص" : "به روز رسانی شاخص")),
             ),
         ),
         t.div(
@@ -195,7 +195,7 @@ function indexUpsertModal(collection, index = "", settings = {}) {
                                 data.index = app.utils.buildIndex(newIndexParts);
                             },
                         }),
-                        t.label({ htmlFor: uniqueId + "checkbox_unique" }, "Unique"),
+                        t.label({ htmlFor: uniqueId + "checkbox_unique" }, "منحصر به فرد"),
                     ),
                 ),
                 t.div(
@@ -215,7 +215,7 @@ function indexUpsertModal(collection, index = "", settings = {}) {
                         { hidden: () => !presetColumns.length, className: "field-help m-t-sm" },
                         t.div(
                             { className: "flex flex-wrap gap-5" },
-                            t.span({ className: "txt", textContent: "Presets:" }),
+                            t.span({ className: "txt", textContent: "پیش‌تنظیم‌ها:" }),
                             () => {
                                 return presetColumns?.map((col) => {
                                     const isSelected = data.lowerCasedIndexColumnNames.includes(col.toLowerCase());

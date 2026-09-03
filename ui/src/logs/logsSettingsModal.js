@@ -309,7 +309,7 @@ function logsSettingsModal(modalSettings) {
                             className: () => `btn ${data.isSaving ? "loading" : ""}`,
                             disabled: () => !data.hasChanges || data.isSaving,
                         },
-                        t.span({ className: "txt" }, "Save changes"),
+                        t.span({ className: "txt" }, "ذخیره تنظیمات"),
                     ),
                 ),
             ];

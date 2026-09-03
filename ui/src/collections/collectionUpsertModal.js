@@ -678,7 +678,7 @@ function collectionUpsertModal(rawCollection, modalSettings) {
                         disabled: () => !data.canSave,
                         onclick: () => confirmSave(true),
                     },
-                    t.span({ className: "txt" }, () => (data.isNew ? "Create" : "Save changes")),
+                    t.span({ className: "txt" }, () => (data.isNew ? "ایجاد" : "ذخیره تغییرات")),
                 ),
                 t.button(
                     {
